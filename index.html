@@ -154,16 +154,67 @@
             margin-bottom: 0.5rem;
         }
         
-        .image-placeholder {
-            background-color: #e8f5e8;
-            height: 300px;
+        .image-container {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
             margin: 1.5rem 0;
+            justify-content: center;
+        }
+        
+        .image-card {
+            flex: 1 1 300px;
+            max-width: 100%;
             border-radius: 8px;
-            color: #3a7c3a;
-            font-weight: bold;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 1rem;
+            background-color: #f9f9f9;
+            text-align: center;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .feature-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .side-image {
+            float: right;
+            width: 40%;
+            max-width: 400px;
+            margin: 0 0 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .side-image-left {
+            float: left;
+            width: 40%;
+            max-width: 400px;
+            margin: 0 1.5rem 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         /* Footer */
@@ -225,6 +276,18 @@
             .hero p {
                 font-size: 1.1rem;
             }
+            
+            .side-image, .side-image-left {
+                float: none;
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
@@ -263,8 +326,22 @@
             <h2>Getting Started with Gardening</h2>
             <p>Gardening is a rewarding hobby that connects you with nature, provides fresh produce, and beautifies your surroundings. Whether you have a sprawling backyard or a small balcony, you can create a thriving garden with the right knowledge and approach.</p>
             
+            <img src="https://images.unsplash.com/photo-1591891349843-9b8b4d1e4c5a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Beautiful garden with various plants" class="feature-image">
+            
             <h3>Assessing Your Space</h3>
             <p>Before you begin gardening, it's essential to understand your available space and its conditions. Consider the following factors:</p>
+            
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Garden space assessment">
+                    <div class="image-caption">Evaluate your garden space for sunlight and soil quality</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1598880940089-72d8e9b003b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Container gardening on balcony">
+                    <div class="image-caption">Even small spaces can become productive gardens</div>
+                </div>
+            </div>
+            
             <ul>
                 <li><strong>Sunlight:</strong> Observe how much direct sunlight your space receives throughout the day. Most vegetables need 6-8 hours of full sun, while some flowers and leafy greens can tolerate partial shade.</li>
                 <li><strong>Soil Quality:</strong> Test your soil's pH and nutrient levels. You can purchase a home testing kit or send a sample to a local extension service. Healthy soil is the foundation of a successful garden.</li>
@@ -272,10 +349,10 @@
                 <li><strong>Water Access:</strong> Ensure you have a convenient water source nearby. Consider installing a rain barrel to collect natural water for your plants.</li>
             </ul>
             
-            <div class="image-placeholder">Gardening Space Assessment Diagram</div>
-            
             <h3>Choosing Your Garden Type</h3>
             <p>Based on your space and goals, you can choose from several garden types:</p>
+            
+            <img src="https://images.unsplash.com/photo-1593238644146-24c7ea6bad8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Raised bed garden" class="side-image">
             
             <h4>In-Ground Gardens</h4>
             <p>Traditional in-ground gardens are ideal if you have good soil and ample space. They allow plants to develop extensive root systems and generally require less frequent watering than containers. Prepare the soil by removing weeds, loosening the earth, and adding compost or other organic matter.</p>
@@ -289,8 +366,22 @@
             <h4>Vertical Gardens</h4>
             <p>Maximize limited space by growing upward. Use trellises, wall planters, hanging baskets, or specially designed vertical gardening systems. Many vegetables like tomatoes, cucumbers, and peas naturally climb, while others can be trained upward.</p>
             
+            <div class="clearfix"></div>
+            
             <h3>Essential Gardening Tools</h3>
             <p>Having the right tools makes gardening more efficient and enjoyable. Start with these basics:</p>
+            
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1598884148855-c6d58a53a314?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gardening tools">
+                    <div class="image-caption">Essential gardening tools for beginners</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1585776802478-4f480df8cde5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gardening gloves and trowel">
+                    <div class="image-caption">Quality tools make gardening more enjoyable</div>
+                </div>
+            </div>
+            
             <ul>
                 <li><strong>Hand Trowel:</strong> For digging small holes, transplanting seedlings, and scooping soil</li>
                 <li><strong>Pruners:</strong> Essential for trimming plants, deadheading flowers, and harvesting</li>
@@ -300,74 +391,18 @@
                 <li><strong>Rake:</strong> For leveling soil and clearing debris</li>
                 <li><strong>Wheelbarrow or Garden Cart:</strong> For moving soil, compost, and plants</li>
             </ul>
-            
-            <h3>Understanding Plant Hardiness Zones</h3>
-            <p>The USDA Plant Hardiness Zone Map divides North America into zones based on average annual minimum winter temperatures. Knowing your zone helps you select plants that will thrive in your climate. You can find your zone by entering your zip code on the USDA website or consulting zone maps available at garden centers.</p>
-            
-            <p>While zone information is helpful, also consider microclimates in your specific location. South-facing walls absorb heat, low areas collect cold air, and urban environments are typically warmer than surrounding rural areas. Observe conditions in different parts of your garden to make the most of these microclimates.</p>
-            
-            <h3>Basic Garden Planning</h3>
-            <p>Successful gardens begin with careful planning. Consider these elements when designing your garden:</p>
-            
-            <h4>Plant Placement</h4>
-            <p>Group plants with similar sunlight, water, and soil requirements together. Place taller plants where they won't shade shorter sun-loving varieties. Consider the mature size of plants to avoid overcrowding.</p>
-            
-            <h4>Companion Planting</h4>
-            <p>Some plants grow better when planted near specific companions. For example, tomatoes benefit from basil, which may help repel pests. Marigolds planted throughout the vegetable garden can deter nematodes. Research companion planting strategies for your chosen crops.</p>
-            
-            <h4>Succession Planting</h4>
-            <p>Maximize your harvest by planting new crops as others finish. After harvesting early spring radishes or lettuce, replant the space with warm-season crops like beans or squash. In late summer, replace spent summer vegetables with cool-season crops for fall harvest.</p>
-            
-            <h4>Crop Rotation</h4>
-            <p>If planting vegetables, avoid growing the same plant family in the same location year after year. Rotating crops helps prevent soil-borne diseases and nutrient depletion. A simple three-year rotation works well for most home gardens.</p>
-            
-            <h3>Soil Preparation Fundamentals</h3>
-            <p>Healthy soil is the most critical element for garden success. Most plants prefer well-draining soil rich in organic matter. Here's how to prepare your garden bed:</p>
-            
-            <ol>
-                <li><strong>Clear the Area:</strong> Remove weeds, grass, and debris from your planting area.</li>
-                <li><strong>Test Soil pH:</strong> Most plants prefer slightly acidic to neutral soil (pH 6.0-7.0). Adjust with lime to raise pH or sulfur to lower it if needed.</li>
-                <li><strong>Loosen the Soil:</strong> Use a garden fork or tiller to break up compacted soil to a depth of 8-12 inches.</li>
-                <li><strong>Add Organic Matter:</strong> Mix 2-4 inches of compost, well-rotted manure, or other organic material into the soil.</li>
-                <li><strong>Level and Smooth:</strong> Use a rake to create a smooth planting surface.</li>
-            </ol>
-            
-            <p>For container gardens, use high-quality potting mix specifically formulated for containers. These mixes provide proper drainage and aeration that garden soil lacks when confined to pots.</p>
-            
-            <h3>Watering Basics</h3>
-            <p>Proper watering is crucial for plant health. Most plants prefer deep, infrequent watering rather than frequent shallow sprinklings. This encourages deep root growth and makes plants more drought-resistant. Water early in the day to minimize evaporation and allow foliage to dry before evening, reducing disease risk.</p>
-            
-            <p>Different plants have varying water needs. New transplants require consistent moisture until established, while drought-tolerant natives may need little supplemental water once established. Monitor soil moisture by feeling the soil a few inches below the surface rather than relying on surface appearance.</p>
-            
-            <h3>Starting from Seeds vs. Transplants</h3>
-            <p>You can begin your garden with seeds or purchased transplants. Each approach has advantages:</p>
-            
-            <h4>Starting from Seeds</h4>
-            <p>Starting from seeds offers greater variety, is more economical, and allows you to control the entire growing process. Some plants, like carrots and beans, grow best when direct-sown in the garden. Others can be started indoors 4-8 weeks before your last frost date.</p>
-            
-            <h4>Using Transplants</h4>
-            <p>Purchasing young plants from a garden center gives you a head start on the season and is easier for beginners. Look for stocky plants with healthy green leaves and no signs of pests or disease. Avoid plants that are already flowering or have roots growing through drainage holes.</p>
-            
-            <h3>Basic Garden Maintenance</h3>
-            <p>Regular maintenance keeps your garden healthy and productive:</p>
-            
-            <ul>
-                <li><strong>Weeding:</strong> Remove weeds regularly before they establish and compete with your plants for nutrients and water.</li>
-                <li><strong>Mulching:</strong> Apply 2-3 inches of organic mulch like straw, wood chips, or shredded leaves to suppress weeds, conserve moisture, and regulate soil temperature.</li>
-                <li><strong>Fertilizing:</strong> Feed plants according to their needs. Use organic options like compost tea, fish emulsion, or balanced organic fertilizers.</li>
-                <li><strong>Monitoring for Pests and Diseases:</strong> Regularly inspect plants for signs of trouble. Early intervention is key to managing issues.</li>
-                <li><strong>Pruning and Deadheading:</strong> Remove dead or damaged growth and spent flowers to encourage new blooms and maintain plant health.</li>
-            </ul>
-            
-            <p>Remember that gardening is a learning process. Don't be discouraged by setbacks—each season brings new opportunities to improve your skills and knowledge.</p>
         </section>
 
         <section id="vegetables">
             <h2>Growing Your Own Vegetables</h2>
-            <p>There's nothing quite like the taste of homegrown vegetables fresh from the garden. Growing your own food ensures peak freshness, allows you to control growing methods, and connects you to the source of your nourishment. Whether you're a beginner or experienced gardener, these tips will help you succeed with vegetable gardening.</p>
+            <p>There's nothing quite like the taste of homegrown vegetables fresh from the garden. Growing your own food ensures peak freshness, allows you to control growing methods, and connects you to the source of your nourishment.</p>
+            
+            <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fresh vegetables from garden" class="feature-image">
             
             <h3>Easy Vegetables for Beginners</h3>
             <p>If you're new to vegetable gardening, start with these forgiving crops that deliver satisfying results:</p>
+            
+            <img src="https://images.unsplash.com/photo-1596638787647-904b822dcee8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Lettuce and salad greens" class="side-image-left">
             
             <h4>Lettuce and Salad Greens</h4>
             <p>Lettuce grows quickly and can be harvested at virtually any stage. Plant seeds directly in the garden as soon as soil can be worked in spring. For continuous harvest, sow additional seeds every 2-3 weeks. Varieties like loose-leaf and romaine allow you to harvest outer leaves while the plant continues growing.</p>
@@ -378,143 +413,76 @@
             <h4>Green Beans</h4>
             <p>Both bush and pole beans are easy to grow from seed. Bush varieties don't require support and produce heavily over a few weeks. Pole beans need trellising but produce over a longer period. Beans improve soil by fixing nitrogen from the air.</p>
             
-            <h4>Zucchini and Summer Squash</h4>
-            <p>These prolific plants will keep you supplied with fresh squash all summer. Just one or two plants are plenty for most families. Harvest when fruits are small and tender for best flavor. Watch plants carefully—zucchini seem to double in size overnight!</p>
+            <div class="clearfix"></div>
             
-            <h4>Tomatoes</h4>
-            <p>Though tomatoes require more attention than some vegetables, their superior flavor makes the effort worthwhile. Start with transplants rather than seeds for your first season. Choose disease-resistant varieties suited to your climate. Provide support with cages or stakes.</p>
+            <h3>Tomato Growing Tips</h3>
+            <p>Though tomatoes require more attention than some vegetables, their superior flavor makes the effort worthwhile.</p>
             
-            <h3>Intermediate Vegetable Crops</h3>
-            <p>Once you've mastered the basics, expand your garden with these popular vegetables:</p>
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tomato plants in garden">
+                    <div class="image-caption">Healthy tomato plants with support</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1561136594-7f68413baa99?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Harvesting tomatoes">
+                    <div class="image-caption">Harvest tomatoes when fully colored but still firm</div>
+                </div>
+            </div>
             
-            <h4>Peppers</h4>
-            <p>Both sweet and hot peppers thrive in warm conditions. Start seeds indoors 8-10 weeks before your last frost date or purchase transplants. Peppers appreciate consistent moisture and benefit from mulch to maintain even soil temperature. Harvest when fruits reach full size and color.</p>
-            
-            <h4>Cucumbers</h4>
-            <p>For straight, beautiful cucumbers, provide consistent moisture and grow on trellises to save space. Choose varieties based on your intended use: slicing cucumbers for fresh eating, pickling types for preserving. Harvest regularly to encourage continued production.</p>
-            
-            <h4>Carrots</h4>
-            <p>Carrots require loose, stone-free soil to develop properly. Sow seeds directly in the garden and thin seedlings to prevent crowding. The feathery foliage is delicate, so mark your planting area. Different varieties offer various colors, shapes, and maturation times.</p>
-            
-            <h4>Broccoli</h4>
-            <p>This cool-season crop produces best when grown in spring or fall. Start seeds indoors or purchase transplants. After harvesting the main head, many varieties produce smaller side shoots for extended harvest. Watch for cabbage worms and treat with organic controls if needed.</p>
-            
-            <h3>Advanced Vegetable Growing</h3>
-            <p>Challenge your skills with these rewarding but more demanding vegetables:</p>
-            
-            <h4>Cauliflower</h4>
-            <p>Cauliflower requires consistent growing conditions and specific temperatures to form tight, white heads. "Blanching" by tying leaves over the developing head protects it from sunlight. Consider colorful varieties that don't require blanching.</p>
-            
-            <h4>Celery</h4>
-            <p>Celery demands rich, moisture-retentive soil and consistent watering. It has a long growing season and is sensitive to temperature fluctuations. Homegrown celery has intense flavor compared to store-bought varieties.</p>
-            
-            <h4>Artichokes</h4>
-            <p>In mild climates, artichokes are perennial plants that produce for several years. They require ample space and rich soil. Protect plants in winter in colder regions. Harvest buds before they begin to open for tender eating.</p>
-            
-            <h4>Melons</h4>
-            <p>Melons need warm soil, plenty of space, and a long growing season. In cooler climates, use black plastic mulch to warm soil and choose short-season varieties. Proper timing of harvest is crucial for peak flavor.</p>
-            
-            <h3>Seasonal Vegetable Gardening</h3>
-            <p>Maximize your harvest by understanding which vegetables grow best in each season:</p>
-            
-            <h4>Cool-Season Vegetables</h4>
-            <p>These crops thrive in cooler temperatures of spring and fall, and many can tolerate light frosts:</p>
             <ul>
-                <li><strong>Spring:</strong> Peas, spinach, lettuce, radishes, carrots, beets, kale, broccoli, cabbage</li>
-                <li><strong>Fall:</strong> Many of the same spring crops plus Brussels sprouts, turnips, parsnips</li>
+                <li>Start with transplants rather than seeds for your first season</li>
+                <li>Choose disease-resistant varieties suited to your climate</li>
+                <li>Provide support with cages or stakes to keep fruits off the ground</li>
+                <li>Water consistently to prevent blossom end rot</li>
+                <li>Harvest when fruits are fully colored but still firm</li>
             </ul>
             
-            <h4>Warm-Season Vegetables</h4>
-            <p>Plant these after danger of frost has passed and soil has warmed:</p>
+            <h3>Companion Planting</h3>
+            <p>Some vegetables grow better when planted near specific companions:</p>
+            
+            <img src="https://images.unsplash.com/photo-1597848212624-e6d4bd9e8dcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Companion planting in garden" class="side-image">
+            
             <ul>
-                <li>Tomatoes, peppers, eggplant, cucumbers, squash, beans, corn, okra</li>
+                <li>Tomatoes benefit from basil, which may help repel pests</li>
+                <li>Carrots and onions make good companions as they don't compete for space</li>
+                <li>Beans and corn work well together - corn provides support for beans</li>
+                <li>Marigolds planted throughout the vegetable garden can deter nematodes</li>
+                <li>Avoid planting potatoes near tomatoes as they can share diseases</li>
             </ul>
             
-            <h3>Extending the Growing Season</h3>
-            <p>With simple techniques, you can harvest fresh vegetables earlier in spring and later into fall:</p>
-            
-            <h4>Season Extension Methods</h4>
-            <ul>
-                <li><strong>Cold Frames:</strong> Bottomless boxes with transparent lids capture solar heat, protecting plants from frost</li>
-                <li><strong>Row Covers:</strong> Lightweight fabric placed directly over plants provides several degrees of frost protection</li>
-                <li><strong>High Tunnels or Hoop Houses:</strong> Larger structures that create a protected microclimate for growing</li>
-                <li><strong>Cloches:</strong> Individual protective covers for plants, traditionally glass bells but now available in plastic</li>
-            </ul>
-            
-            <h3>Vegetable Garden Pest Management</h3>
-            <p>Preventing and managing pests is essential for a productive vegetable garden. Integrated Pest Management (IPM) emphasizes prevention and uses multiple strategies:</p>
-            
-            <h4>Prevention Strategies</h4>
-            <ul>
-                <li>Choose disease-resistant varieties when available</li>
-                <li>Rotate crops each year to disrupt pest life cycles</li>
-                <li>Use floating row covers to exclude pests</li>
-                <li>Encourage beneficial insects by planting flowers among vegetables</li>
-                <li>Keep garden clean of debris where pests can overwinter</li>
-            </ul>
-            
-            <h4>Common Vegetable Pests and Organic Controls</h4>
-            <ul>
-                <li><strong>Aphids:</strong> Blast with water, encourage ladybugs, use insecticidal soap</li>
-                <li><strong>Cabbage Worms:</strong> Handpick, use row covers, apply Bt (Bacillus thuringiensis)</li>
-                <li><strong>Tomato Hornworms:</strong> Handpick, encourage parasitic wasps</li>
-                <li><strong>Squash Bugs:</strong> Place boards as traps, handpick nymphs and adults</li>
-                <li><strong>Slugs and Snails:</strong> Use beer traps, diatomaceous earth, copper barriers</li>
-            </ul>
-            
-            <h3>Harvesting and Storing Vegetables</h3>
-            <p>Proper harvesting techniques ensure the best flavor and extended productivity:</p>
-            
-            <h4>Harvesting Tips by Vegetable</h4>
-            <ul>
-                <li><strong>Lettuce:</strong> Harvest outer leaves or whole head before it bolts (sends up flower stalk)</li>
-                <li><strong>Tomatoes:</strong> Harvest when fully colored but still firm</li>
-                <li><strong>Carrots:</strong> Can be harvested at any size; flavor often improves after light frost</li>
-                <li><strong>Zucchini:</strong> Pick when 6-8 inches long for tender flesh</li>
-                <li><strong>Beans:</strong> Harvest before seeds bulge in pods</li>
-                <li><strong>Broccoli:</strong> Cut central head when florets are tight and green</li>
-            </ul>
-            
-            <h4>Storage Methods</h4>
-            <ul>
-                <li><strong>Cool and Moist:</strong> Root vegetables (carrots, beets), leafy greens (store in refrigerator with damp cloth)</li>
-                <li><strong>Cool and Dry:</strong> Onions, garlic (cure first, then store in mesh bags)</li>
-                <li><strong>Warm and Dry:</strong> Winter squash, pumpkins (cure first, then store at room temperature)</li>
-                <li><strong>Counter Storage:</strong> Tomatoes, cucumbers, peppers (best flavor at room temperature)</li>
-            </ul>
-            
-            <p>With careful planning and consistent care, your vegetable garden can provide fresh, nutritious produce throughout the growing season and beyond through proper storage and preservation techniques.</p>
+            <div class="clearfix"></div>
         </section>
 
         <section id="flowers">
             <h2>Creating Beautiful Flower Gardens</h2>
-            <p>Flower gardens bring color, fragrance, and beauty to any landscape while supporting pollinators and other beneficial insects. Whether you prefer formal beds, cottage gardens, or naturalistic plantings, understanding flower types, design principles, and care requirements will help you create stunning displays.</p>
+            <p>Flower gardens bring color, fragrance, and beauty to any landscape while supporting pollinators and other beneficial insects. Whether you prefer formal beds, cottage gardens, or naturalistic plantings, understanding flower types and design principles will help you create stunning displays.</p>
+            
+            <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Colorful flower garden" class="feature-image">
             
             <h3>Annual vs. Perennial Flowers</h3>
             <p>Understanding the difference between annual and perennial flowers is fundamental to garden planning:</p>
             
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Annual flowers - marigolds">
+                    <div class="image-caption">Annual flowers like marigolds provide season-long color</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1597848212624-e6d4bd9e8dcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Perennial flowers - coneflowers">
+                    <div class="image-caption">Perennial flowers like coneflowers return year after year</div>
+                </div>
+            </div>
+            
             <h4>Annual Flowers</h4>
-            <p>Annuals complete their life cycle in one growing season, growing from seed, flowering, setting seed, and dying. They typically bloom prolifically throughout the season but need replanting each year. Popular annuals include:</p>
-            <ul>
-                <li><strong>Petunias:</strong> Available in countless colors and patterns, excellent for containers and borders</li>
-                <li><strong>Marigolds:</strong> Easy to grow from seed, pest-repellent properties, vibrant warm colors</li>
-                <li><strong>Zinnias:</strong> Long-lasting cut flowers, drought-tolerant, attract butterflies</li>
-                <li><strong>Impatiens:</strong> Shade-tolerant, continuous blooms in shady areas</li>
-                <li><strong>Sunflowers:</strong> Dramatic height, edible seeds, pollinator favorites</li>
-            </ul>
+            <p>Annuals complete their life cycle in one growing season, growing from seed, flowering, setting seed, and dying. They typically bloom prolifically throughout the season but need replanting each year.</p>
             
             <h4>Perennial Flowers</h4>
-            <p>Perennials live for three or more years, dying back to the ground in winter and regrowing from their roots each spring. They often have shorter bloom periods than annuals but provide structure to the garden. Popular perennials include:</p>
-            <ul>
-                <li><strong>Coneflowers (Echinacea):</strong> Drought-tolerant, long bloom time, attract pollinators</li>
-                <li><strong>Daylilies (Hemerocallis):</strong> Adaptable to various conditions, prolific bloomers</li>
-                <li><strong>Hostas:</strong> Shade-loving, attractive foliage in various colors and sizes</li>
-                <li><strong>Black-eyed Susans (Rudbeckia):</strong> Cheerful yellow flowers, self-seeding, long bloom period</li>
-                <li><strong>Peonies:</strong> Long-lived, fragrant blooms, excellent cut flowers</li>
-            </ul>
+            <p>Perennials live for three or more years, dying back to the ground in winter and regrowing from their roots each spring. They often have shorter bloom periods than annuals but provide structure to the garden.</p>
             
             <h3>Designing Your Flower Garden</h3>
             <p>Thoughtful design transforms a collection of plants into a cohesive, beautiful garden. Consider these design principles:</p>
+            
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Well-designed flower garden" class="side-image-left">
             
             <h4>Color Theory in the Garden</h4>
             <p>Color creates mood and visual interest in the garden:</p>
@@ -534,142 +502,53 @@
                 <li><strong>Texture Variation:</strong> Combine plants with different leaf sizes and shapes for visual interest</li>
             </ul>
             
-            <h4>Considering Bloom Times</h4>
-            <p>For continuous color throughout the growing season, include plants with staggered bloom times:</p>
+            <div class="clearfix"></div>
+            
+            <h3>Pollinator Gardens</h3>
+            <p>Creating a garden that supports bees, butterflies, and other pollinators is both beautiful and ecologically important.</p>
+            
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1597481499750-3e11b3e5c1e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bee on flower">
+                    <div class="image-caption">Bees are essential pollinators for many plants</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Butterfly in garden">
+                    <div class="image-caption">Butterflies add beauty while pollinating flowers</div>
+                </div>
+            </div>
+            
+            <p>Excellent plants for pollinators include:</p>
             <ul>
-                <li><strong>Spring Bloomers:</strong> Tulips, daffodils, bleeding heart, forget-me-nots</li>
-                <li><strong>Early Summer:</strong> Peonies, iris, coral bells, catmint</li>
-                <li><strong>Midsummer:</strong> Daylilies, coneflowers, black-eyed Susans, phlox</li>
-                <li><strong>Late Summer/Fall:</strong> Sedum, asters, goldenrod, Japanese anemones</li>
+                <li>Bee balm (Monarda)</li>
+                <li>Coneflowers (Echinacea)</li>
+                <li>Lavender</li>
+                <li>Sunflowers</li>
+                <li>Milkweed (essential for monarch butterflies)</li>
+                <li>Salvia</li>
+                <li>Zinnias</li>
             </ul>
-            
-            <h3>Flower Garden Styles</h3>
-            <p>Different garden styles create distinct moods and suit various landscapes:</p>
-            
-            <h4>Cottage Garden</h4>
-            <p>Informal, abundant plantings with a mix of flowers, herbs, and sometimes vegetables. Characterized by:</p>
-            <ul>
-                <li>Dense plantings that spill over paths</li>
-                <li>Mix of annuals, perennials, and self-seeding plants</li>
-                <li>Traditional flowers like roses, lavender, delphiniums, and hollyhocks</li>
-                <li>Informal structures like arbors and picket fences</li>
-            </ul>
-            
-            <h4>Formal Garden</h4>
-            <p>Structured, symmetrical designs with clean lines and controlled plantings. Features include:</p>
-            <ul>
-                <li>Geometric beds and paths</li>
-                <li>Clipped hedges and topiary</li>
-                <li>Restricted color palettes</li>
-                <li>Repetition of plants in patterns</li>
-            </ul>
-            
-            <h4>Native Plant Garden</h4>
-            <p>Gardens featuring plants indigenous to your region offer ecological benefits:</p>
-            <ul>
-                <li>Adapted to local climate and soil conditions</li>
-                <li>Support local pollinators, birds, and other wildlife</li>
-                <li>Typically require less water and maintenance</li>
-                <li>Create a sense of regional identity</li>
-            </ul>
-            
-            <h3>Specialty Flower Gardens</h3>
-            <p>Consider creating gardens with specific themes or purposes:</p>
-            
-            <h4>Cutting Garden</h4>
-            <p>Dedicated space for growing flowers specifically for arrangements. Design considerations:</p>
-            <ul>
-                <li>Plant in rows for easy access and maintenance</li>
-                <li>Choose varieties with long vase lives and strong stems</li>
-                <li>Include succession plantings for continuous harvest</li>
-                <li>Popular cutting flowers: zinnias, sunflowers, cosmos, snapdragons, dahlias</li>
-            </ul>
-            
-            <h4>Pollinator Garden</h4>
-            <p>Designed specifically to support bees, butterflies, and other pollinators. Key elements:</p>
-            <ul>
-                <li>Provide nectar and pollen sources throughout the growing season</li>
-                <li>Include host plants for butterfly caterpillars</li>
-                <li>Provide water sources and shelter</li>
-                <li>Avoid pesticides, especially during bloom times</li>
-                <li>Excellent pollinator plants: bee balm, salvia, milkweed, lavender, coneflower</li>
-            </ul>
-            
-            <h4>Moon Garden</h4>
-            <p>Designed to be enjoyed in the evening, featuring white and silver plants that glow in moonlight:</p>
-            <ul>
-                <li>White-flowering plants like moonflower, nicotiana, and white roses</li>
-                <li>Silver-foliage plants like artemisia, lamb's ear, and dusty miller</li>
-                <li>Fragrant plants that release scent in evening like night-blooming jasmine</li>
-                <li>Strategic lighting to enhance the magical atmosphere</li>
-            </ul>
-            
-            <h3>Flower Garden Maintenance</h3>
-            <p>Proper care keeps flower gardens healthy and beautiful:</p>
-            
-            <h4>Watering Techniques</h4>
-            <p>Most flowers prefer consistent moisture but well-drained soil. Water deeply and less frequently to encourage deep root growth. Use soaker hoses or drip irrigation to deliver water directly to roots and avoid wetting foliage, which can promote disease.</p>
-            
-            <h4>Fertilizing Flowers</h4>
-            <p>Different flowers have varying nutrient needs:</p>
-            <ul>
-                <li><strong>Annuals:</strong> Benefit from regular feeding throughout growing season</li>
-                <li><strong>Perennials:</strong> Typically need less fertilizer; apply in spring as growth begins</li>
-                <li><strong>Bulbs:</strong> Fertilize when planting and after flowering</li>
-                <li><strong>Roses:</strong> Heavy feeders; require regular specialized rose fertilizer</li>
-            </ul>
-            
-            <h4>Deadheading and Pruning</h4>
-            <p>Removing spent flowers encourages continued blooming in many plants. Some perennials benefit from cutting back after first flush of flowers to promote reblooming. Prune spring-flowering shrubs immediately after blooming, summer bloomers in late winter or early spring.</p>
-            
-            <h4>Dividing Perennials</h4>
-            <p>Many perennials become overcrowded and benefit from division every 3-5 years. Signs that division is needed:</p>
-            <ul>
-                <li>Decreased flowering</li>
-                <li>Bare center with growth only on edges</li>
-                <li>Poor growth despite proper care</li>
-            </ul>
-            <p>Divide in spring or fall, depending on the plant, and replant healthy divisions.</p>
-            
-            <h3>Common Flower Garden Challenges</h3>
-            <p>Even experienced gardeners face challenges in the flower garden:</p>
-            
-            <h4>Pest Problems</h4>
-            <p>Common flower garden pests and organic solutions:</p>
-            <ul>
-                <li><strong>Aphids:</strong> Spray with strong water stream or insecticidal soap</li>
-                <li><strong>Japanese Beetles:</strong> Handpick in early morning, use milky spore for grub control</li>
-                <li><strong>Slugs and Snails:</strong> Use beer traps, copper barriers, or iron phosphate baits</li>
-                <li><strong>Spider Mites:</strong> Increase humidity, spray with water, use horticultural oil</li>
-            </ul>
-            
-            <h4>Disease Issues</h4>
-            <p>Prevention is key to managing plant diseases:</p>
-            <ul>
-                <li>Provide good air circulation through proper spacing</li>
-                <li>Water at base of plants to keep foliage dry</li>
-                <li>Remove and dispose of diseased plant material</li>
-                <li>Choose disease-resistant varieties when available</li>
-            </ul>
-            
-            <h4>Soil Problems</h4>
-            <p>Address common soil issues for healthier flowers:</p>
-            <ul>
-                <li><strong>Poor Drainage:</strong> Amend with organic matter, create raised beds</li>
-                <li><strong>Compaction:</strong> Avoid walking on beds, aerate with garden fork</li>
-                <li><strong>Nutrient Deficiency:</strong> Conduct soil test, amend based on results</li>
-                <li><strong>Wrong pH:</strong> Most flowers prefer slightly acidic to neutral soil (6.0-7.0)</li>
-            </ul>
-            
-            <p>With careful planning, proper plant selection, and consistent care, your flower garden can become a beautiful, thriving oasis that provides joy throughout the seasons.</p>
         </section>
 
         <section id="tools">
             <h2>Essential Gardening Tools and Equipment</h2>
-            <p>Having the right tools makes gardening more efficient, enjoyable, and successful. Quality tools that fit your body and gardening style can last for decades with proper care. This comprehensive guide covers essential gardening tools, their uses, and maintenance tips.</p>
+            <p>Having the right tools makes gardening more efficient, enjoyable, and successful. Quality tools that fit your body and gardening style can last for decades with proper care.</p>
+            
+            <img src="https://images.unsplash.com/photo-1598884148855-c6d58a53a314?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Collection of gardening tools" class="feature-image">
             
             <h3>Hand Tools</h3>
             <p>Hand tools are the workhorses of the garden, used for planting, weeding, and detailed work. Invest in quality tools with comfortable grips that fit your hand well.</p>
+            
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1585776802478-4f480df8cde5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gardening hand tools">
+                    <div class="image-caption">Essential hand tools for every gardener</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1598880940089-72d8e9b003b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pruning tools">
+                    <div class="image-caption">Quality pruning tools for healthy plants</div>
+                </div>
+            </div>
             
             <h4>Trowels</h4>
             <p>A trowel is perhaps the most used tool in the garden. Look for these features:</p>
@@ -679,15 +558,6 @@
                 <li><strong>Connection:</strong> Solid one-piece construction or firmly attached handle</li>
                 <li><strong>Size:</strong> Various sizes for different tasks—narrow for digging in tight spaces, wider for moving more soil</li>
             </ul>
-            <p>Uses: Planting small plants, digging holes for bulbs, transplanting seedlings, scooping soil or amendments</p>
-            
-            <h4>Hand Forks or Cultivators</h4>
-            <p>These tools have three or four sturdy tines and are essential for working soil in confined spaces. Choose between:</p>
-            <ul>
-                <li><strong>Straight-tined:</strong> Better for breaking up compacted soil</li>
-                <li><strong>Curved-tined:</strong> Ideal for cultivating and weeding</li>
-            </ul>
-            <p>Uses: Loosening soil around plants, incorporating fertilizer, weeding in tight spaces</p>
             
             <h4>Pruners (Secateurs)</h4>
             <p>Quality pruners are worth the investment. The two main types are:</p>
@@ -695,46 +565,11 @@
                 <li><strong>Bypass Pruners:</strong> Scissor-like action makes clean cuts on live wood; ideal for most pruning tasks</li>
                 <li><strong>Anvil Pruners:</strong> Single blade cuts against a flat surface; better for dead wood but can crush live stems</li>
             </ul>
-            <p>Consider ergonomic models if you have hand strength issues. Keep blades sharp and clean for easiest use.</p>
-            <p>Uses: Deadheading flowers, harvesting, pruning small branches (up to ½ inch diameter), cutting back perennials</p>
-            
-            <h4>Weeding Tools</h4>
-            <p>Specialized weeding tools make removing weeds easier and more thorough:</p>
-            <ul>
-                <li><strong>Dandelion Weeder:</strong> Long, forked tool for tapping deep roots</li>
-                <li><strong>Hori-Hori Knife:</strong> Japanese digging knife with sharp edge and serrated side</li>
-                <li><strong>Fishtail Weeder:</strong> V-shaped notch for removing taproot weeds</li>
-            </ul>
-            
-            <h3>Digging and Soil Preparation Tools</h3>
-            <p>These larger tools prepare garden beds, dig planting holes, and move soil and amendments.</p>
-            
-            <h4>Garden Spades and Shovels</h4>
-            <p>Though often used interchangeably, spades and shovels have different purposes:</p>
-            <ul>
-                <li><strong>Spade:</strong> Flat, rectangular blade with straight edge; ideal for cutting straight edges, digging holes, moving soil</li>
-                <li><strong>Shovel:</strong> Curved, pointed blade; better for scooping and moving loose materials</li>
-            </ul>
-            <p>Look for forged steel heads and ash or fiberglass handles. Choose the right size for your strength and height.</p>
-            
-            <h4>Garden Forks</h4>
-            <p>These come in several types for different tasks:</p>
-            <ul>
-                <li><strong>Digging Fork:</strong> Four flat, sturdy tines; ideal for turning soil, breaking clumps, harvesting root crops</li>
-                <li><strong>Spading Fork:</strong> Similar to digging fork but with slightly curved tines; excellent for aerating soil</li>
-                <li><strong>Pitchfork:</strong> Long, thin tines; perfect for moving loose materials like compost, straw, or leaves</li>
-            </ul>
-            
-            <h4>Garden Rakes</h4>
-            <p>Different rakes serve specific purposes:</p>
-            <ul>
-                <li><strong>Bow Rake (Garden Rake):</strong> Sturdy, short tines set at 90 degrees; for leveling soil, spreading mulch, removing debris</li>
-                <li><strong>Leaf Rake:</strong> Flexible tines in fan shape; for gathering leaves and grass clippings</li>
-                <li><strong>Thatching Rake:</strong> Sharp blades for removing thatch from lawns</li>
-            </ul>
             
             <h3>Watering Equipment</h3>
             <p>Proper watering is essential for plant health, and the right equipment makes the job easier.</p>
+            
+            <img src="https://images.unsplash.com/photo-1598880940089-72d8e9b003b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Watering can in garden" class="side-image">
             
             <h4>Watering Cans</h4>
             <p>Choose based on your needs:</p>
@@ -742,15 +577,6 @@
                 <li><strong>Capacity:</strong> 1-2 gallon cans are manageable for most people</li>
                 <li><strong>Material:</strong> Metal lasts longer but plastic is lighter and won't rust</li>
                 <li><strong>Roses (sprinkler heads):</strong> Removable for different flow patterns; fine rose for seedlings, coarse for established plants</li>
-            </ul>
-            
-            <h4>Hoses and Nozzles</h4>
-            <p>Invest in quality hoses and accessories:</p>
-            <ul>
-                <li><strong>Hose Material:</strong> Rubber hoses are durable and kink-resistant; reinforced vinyl is lighter and less expensive</li>
-                <li><strong>Length:</strong> Choose the shortest hose that reaches all garden areas to maintain water pressure</li>
-                <li><strong>Nozzles:</strong> Look for adjustable patterns and comfortable grip; pistol grip nozzles are easier on hands</li>
-                <li><strong>Quick Connectors:</strong> Save time when switching between attachments</li>
             </ul>
             
             <h4>Irrigation Systems</h4>
@@ -761,341 +587,82 @@
                 <li><strong>Sprinklers:</strong> Oscillating, impulse, or stationary patterns for lawn and large bed watering</li>
             </ul>
             
-            <h3>Pruning and Cutting Tools</h3>
-            <p>Proper pruning maintains plant health and shape. Different tools suit different sized branches.</p>
-            
-            <h4>Loppers</h4>
-            <p>For branches too large for hand pruners (typically ½ to 2 inches diameter):</p>
-            <ul>
-                <li><strong>Bypass vs. Anvil:</strong> Same principles as hand pruners; bypass generally preferred for live wood</li>
-                <li><strong>Handle Length:</strong> Longer handles provide more leverage but may be harder to control</li>
-                <li><strong>Ratchet Mechanism:</strong> Helpful for those with limited hand strength</li>
-            </ul>
-            
-            <h4>Pruning Saws</h4>
-            <p>For branches larger than 2 inches diameter:</p>
-            <ul>
-                <li><strong>Folding Saws:</strong> Compact and safe for storage</li>
-                <li><strong>Fixed-Blade Saws:</strong> Typically more sturdy</li>
-                <li><strong>Japanese Pull Saws:</strong> Cut on pull stroke for cleaner, easier cuts</li>
-            </ul>
-            
-            <h4>Hedge Shears</h4>
-            <p>For shaping hedges and shrubs:</p>
-            <ul>
-                <li><strong>Manual Shears:</strong> Scissor-action for precise cuts</li>
-                <li><strong>Electric or Battery-Powered:</strong> Save effort on large hedges</li>
-                <li><strong>Pole Hedge Trimmers:</strong> For reaching high hedges safely</li>
-            </ul>
-            
-            <h3>Wheelbarrows and Garden Carts</h3>
-            <p>These essential tools save your back when moving heavy or bulky materials.</p>
-            
-            <h4>Wheelbarrows</h4>
-            <p>Traditional one-wheel design offers maneuverability but requires balance:</p>
-            <ul>
-                <li><strong>Materials:</strong> Steel is durable but heavy; plastic is lighter but may crack in cold weather</li>
-                <li><strong>Wheel Type:</strong> Pneumatic tires cushion loads but can puncture; solid tires never go flat</li>
-                <li><strong>Capacity:</strong> Choose based on your typical loads; 4-6 cubic feet is common for home gardens</li>
-            </ul>
-            
-            <h4>Garden Carts</h4>
-            <p>Two-wheel designs are more stable for heavy loads:</p>
-            <ul>
-                <li><strong>Dump Carts:</strong> Feature that allows easy unloading of materials</li>
-                <li><strong>Flatbed Carts:</strong> Versatile for carrying odd-shaped items</li>
-                <li><strong>Foldable Carts:</strong> Save storage space when not in use</li>
-            </ul>
-            
-            <h3>Specialized Gardening Tools</h3>
-            <p>These tools address specific gardening tasks and can be worth the investment if you frequently perform these activities.</p>
-            
-            <h4>Soil Testing Kits</h4>
-            <p>Essential for understanding your soil's needs:</p>
-            <ul>
-                <li><strong>pH Testers:</strong> Determine soil acidity/alkalinity</li>
-                <li><strong>Nutrient Test Kits:</strong> Measure levels of nitrogen, phosphorus, and potassium</li>
-                <li><strong>Electronic Meters:</strong> Provide instant readings of pH, moisture, and light</li>
-            </ul>
-            
-            <h4>Composting Equipment</h4>
-            <p>Turn garden and kitchen waste into valuable compost:</p>
-            <ul>
-                <li><strong>Compost Bins:</strong> Contained systems that speed decomposition</li>
-                <li><strong>Compost Tumblers:</strong> Easier to turn and faster than stationary bins</li>
-                <li><strong>Compost Thermometers:</strong> Monitor temperature to ensure proper decomposition</li>
-                <li><strong>Aerating Tools:</strong> Special tools for turning compost without heavy lifting</li>
-            </ul>
-            
-            <h4>Plant Supports</h4>
-            <p>Keep plants upright and organized:</p>
-            <ul>
-                <li><strong>Stakes:</strong> Wood, bamboo, or metal supports for individual plants</li>
-                <li><strong>Cages:</strong> Tomato cages and other pre-formed supports</li>
-                <li><strong>Trellises:</strong> For climbing plants like peas, beans, and cucumbers</li>
-                <li><strong>Pea and Bean Frames:</strong> Specially designed supports for legumes</li>
-            </ul>
-            
-            <h3>Tool Maintenance and Storage</h3>
-            <p>Proper care extends tool life and ensures they work effectively:</p>
-            
-            <h4>Cleaning Tools</h4>
-            <p>After each use:</p>
-            <ul>
-                <li>Remove soil with a stiff brush or putty knife</li>
-                <li>Wipe metal surfaces with oiled rag to prevent rust</li>
-                <li>Disinfect cutting tools with rubbing alcohol to prevent disease spread</li>
-            </ul>
-            
-            <h4>Sharpening</h4>
-            <p>Sharp tools work better and are safer:</p>
-            <ul>
-                <li>Use file or sharpening stone for digging tools</li>
-                <li>Use specialized sharpener for pruners and loppers</li>
-                <li>Sharpen at the original angle</li>
-            </ul>
-            
-            <h4>Storage</h4>
-            <p>Proper storage prevents damage and keeps tools organized:</p>
-            <ul>
-                <li>Hang tools to save space and prevent damage to edges</li>
-                <li>Store in dry location to prevent rust</li>
-                <li>Use tool organizers or racks</li>
-                <li>Consider a locked storage for valuable tools</li>
-            </ul>
-            
-            <h3>Ergonomics and Safety</h3>
-            <p>Gardening should be enjoyable, not painful. Consider these factors:</p>
-            
-            <h4>Ergonomic Tools</h4>
-            <p>Designed to reduce strain:</p>
-            <ul>
-                <li>Padded, angled handles that fit natural hand position</li>
-                <li>Ratchet mechanisms that reduce effort</li>
-                <li>Extended handles to minimize bending</li>
-            </ul>
-            
-            <h4>Safety Gear</h4>
-            <p>Protect yourself while gardening:</p>
-            <ul>
-                <li><strong>Gloves:</strong> Protect from thorns, blisters, and soil-borne organisms</li>
-                <li><strong>Knee Pads or Kneeler:</strong> Protect knees during prolonged kneeling</li>
-                <li><strong>Safety Glasses:</strong> Essential when using pruning tools or power equipment</li>
-                <li><strong>Sturdy Shoes:</strong> Protect feet from dropped tools and provide stability</li>
-            </ul>
-            
-            <p>Investing in quality tools that fit your body and gardening style will make your gardening experience more productive and enjoyable for years to come.</p>
+            <div class="clearfix"></div>
         </section>
 
         <section id="seasonal">
             <h2>Seasonal Gardening Guide</h2>
-            <p>Successful gardening requires understanding the changing needs of your garden throughout the year. This comprehensive seasonal guide will help you plan, plant, and maintain your garden no matter the season, ensuring year-round beauty and productivity.</p>
+            <p>Successful gardening requires understanding the changing needs of your garden throughout the year. This comprehensive seasonal guide will help you plan, plant, and maintain your garden no matter the season.</p>
+            
+            <img src="https://images.unsplash.com/photo-1597848212624-e6d4bd9e8dcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Seasonal garden changes" class="feature-image">
             
             <h3>Spring Gardening (March-May)</h3>
             <p>Spring is a time of renewal in the garden, with warming soil and lengthening days triggering new growth. This busy season sets the stage for the entire growing year.</p>
             
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spring garden preparation">
+                    <div class="image-caption">Spring is the time for garden preparation and planting</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1597848212624-e6d4bd9e8dcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spring bulbs flowering">
+                    <div class="image-caption">Spring bulbs bring early color to the garden</div>
+                </div>
+            </div>
+            
             <h4>Early Spring Tasks</h4>
             <p>As the ground thaws and temperatures begin to rise:</p>
             <ul>
-                <li><strong>Clean Up:</strong> Remove winter mulch and debris, but wait until soil dries somewhat to avoid compaction</li>
-                <li><strong>Soil Preparation:</strong> Test soil and amend based on results. Add compost and other organic matter to planting beds</li>
-                <li><strong>Pruning:</strong> Prune summer-flowering shrubs before new growth emerges. Remove winter damage from trees and shrubs</li>
-                <li><strong>Divide Perennials:</strong> Divide overcrowded perennials as new growth appears</li>
-                <li><strong>Cool-Season Planting:</strong> Direct sow peas, spinach, lettuce, radishes, and other cool-season crops</li>
-                <li><strong>Start Seeds Indoors:</strong> Begin warm-season vegetables and annual flowers 6-8 weeks before last frost date</li>
-            </ul>
-            
-            <h4>Mid-Spring Tasks</h4>
-            <p>As danger of hard frost passes:</p>
-            <ul>
-                <li><strong>Planting:</strong> Set out hardened-off cool-season transplants like broccoli, cabbage, and kale</li>
-                <li><strong>Lawn Care:</strong> Apply spring fertilizer, overseed bare patches, and apply pre-emergent herbicide if needed for weed control</li>
-                <li><strong>Weed Control:</strong> Remove early weeds before they set seed</li>
-                <li><strong>Pest Monitoring:</strong> Begin watching for early pest problems like aphids</li>
-                <li><strong>Bulb Care:</strong> Fertilize spring-flowering bulbs as foliage emerges</li>
-            </ul>
-            
-            <h4>Late Spring Tasks</h4>
-            <p>As soil warms and last frost date passes:</p>
-            <ul>
-                <li><strong>Warm-Season Planting:</strong> Transplant tomatoes, peppers, eggplant, and basil after danger of frost has passed</li>
-                <li><strong>Direct Sowing:</strong> Plant beans, corn, squash, and cucumbers in warm soil</li>
-                <li><strong>Annual Flowers:</strong> Plant tender annuals after last frost date</li>
-                <li><strong>Mulching:</strong> Apply mulch to conserve moisture and suppress weeds as soil warms</li>
-                <li><strong>Staking:</strong> Install supports for tall perennials and vining vegetables before they need them</li>
+                <li>Clean up winter debris and remove protective mulch</li>
+                <li>Test soil and amend based on results</li>
+                <li>Prune summer-flowering shrubs before new growth emerges</li>
+                <li>Divide overcrowded perennials as new growth appears</li>
+                <li>Direct sow peas, spinach, lettuce, radishes, and other cool-season crops</li>
+                <li>Start seeds indoors for warm-season vegetables and annual flowers</li>
             </ul>
             
             <h3>Summer Gardening (June-August)</h3>
             <p>Summer brings peak growth and productivity to the garden, along with challenges like heat, drought, and pests. Consistent care ensures your garden thrives through the hottest months.</p>
             
-            <h4>Early Summer Tasks</h4>
-            <p>As temperatures rise and plants establish:</p>
-            <ul>
-                <li><strong>Watering:</strong> Establish consistent watering routine as temperatures increase. Water deeply and early in the day</li>
-                <li><strong>Succession Planting:</strong> Sow quick-maturing crops like beans, lettuce, and radishes for continuous harvest</li>
-                <li><strong>Thinning:</strong> Thin direct-sown vegetables to proper spacing</li>
-                <li><strong>Harvesting:</strong> Begin harvesting early crops like lettuce, radishes, and strawberries</li>
-                <li><strong>Pest Control:</strong> Monitor for common summer pests like Japanese beetles, squash bugs, and tomato hornworms</li>
-            </ul>
+            <img src="https://images.unsplash.com/photo-1597848212624-e6d4bd9e8dcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Summer garden in full bloom" class="side-image-left">
             
             <h4>Mid-Summer Tasks</h4>
             <p>During the hottest part of summer:</p>
             <ul>
-                <li><strong>Water Management:</strong> Pay close attention to watering needs during heat waves. Consider soaker hoses or drip irrigation</li>
-                <li><strong>Fertilizing:</strong> Side-dress heavy feeders like corn and tomatoes with compost or balanced fertilizer</li>
-                <li><strong>Weeding:</strong> Stay on top of weeds that compete for water and nutrients</li>
-                <li><strong>Deadheading:</strong> Remove spent flowers to encourage continued blooming</li>
-                <li><strong>Harvesting:</strong> Regular harvesting of vegetables like beans, zucchini, and cucumbers encourages continued production</li>
-                <li><strong>Fall Garden Planning:</strong> Start planning and ordering seeds for fall crops</li>
+                <li>Pay close attention to watering needs during heat waves</li>
+                <li>Side-dress heavy feeders like corn and tomatoes with compost</li>
+                <li>Stay on top of weeds that compete for water and nutrients</li>
+                <li>Remove spent flowers to encourage continued blooming</li>
+                <li>Harvest vegetables regularly to encourage continued production</li>
+                <li>Start planning and ordering seeds for fall crops</li>
             </ul>
             
-            <h4>Late Summer Tasks</h4>
-            <p>As days begin to shorten and temperatures moderate:</p>
-            <ul>
-                <li><strong>Fall Planting:</strong> Direct sow cool-season crops like carrots, beets, and turnips for fall harvest</li>
-                <li><strong>Transplanting:</strong> Start broccoli, cabbage, and cauliflower indoors for fall transplant</li>
-                <li><strong>Perennial Care:</strong> Divide and transplant iris, daylilies, and peonies</li>
-                <li><strong>Bulb Ordering:</strong> Order spring-flowering bulbs for fall planting</li>
-                <li><strong>Compost Management:</strong> Turn compost pile and add summer garden waste</li>
-            </ul>
+            <div class="clearfix"></div>
             
             <h3>Autumn Gardening (September-November)</h3>
             <p>Autumn is a second spring in the garden, with cooler temperatures creating ideal conditions for many plants. This season focuses on harvesting, cleanup, and preparation for winter.</p>
             
-            <h4>Early Autumn Tasks</h4>
-            <p>As temperatures begin to cool:</p>
-            <ul>
-                <li><strong>Harvesting:</strong> Continue harvesting warm-season crops as they mature. Watch for first frost warnings</li>
-                <li><strong>Fall Planting:</strong> Transplant broccoli, cauliflower, and kale seedlings into garden</li>
-                <li><strong>Lawn Care:</strong> Aerate, dethatch, and overseed lawns. Apply fall fertilizer</li>
-                <li><strong>Bulb Planting:</strong> Plant spring-flowering bulbs like tulips, daffodils, and crocus</li>
-                <li><strong>Perennial Planting:</strong> Ideal time to plant trees, shrubs, and perennials as cooler temperatures reduce transplant stress</li>
-            </ul>
-            
-            <h4>Mid-Autumn Tasks</h4>
-            <p>As leaves change color and temperatures drop:</p>
-            <ul>
-                <li><strong>Frost Protection:</strong> Be prepared to protect tender plants from early frosts with row covers or cloches</li>
-                <li><strong>Garden Cleanup:</strong> Remove spent annuals and vegetable plants. Compost healthy material; dispose of diseased plants</li>
-                <li><strong>Leaf Management:</strong> Rake leaves and use as mulch or add to compost pile</li>
-                <li><strong>Herb Preservation:</strong> Harvest and preserve herbs before hard frost</li>
-                <li><strong>Garlic Planting:</strong> Plant garlic cloves for harvest next summer</li>
-            </ul>
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Autumn harvest">
+                    <div class="image-caption">Autumn brings abundant harvests</div>
+                </div>
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1597848212624-e6d4bd9e8dcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fall garden cleanup">
+                    <div class="image-caption">Fall is the time for garden cleanup and preparation</div>
+                </div>
+            </div>
             
             <h4>Late Autumn Tasks</h4>
             <p>As growing season ends and winter approaches:</p>
             <ul>
-                <li><strong>Final Harvest:</strong> Harvest remaining cold-tolerant crops like kale, Brussels sprouts, and parsnips</li>
-                <li><strong>Winter Protection:</strong> Apply winter mulch after ground freezes to prevent heaving. Protect tender perennials and shrubs</li>
-                <li><strong>Tool Maintenance:</strong> Clean, sharpen, and oil tools before winter storage</li>
-                <li><strong>Irrigation Winterization:</strong> Drain and store hoses. Winterize irrigation systems to prevent freezing damage</li>
-                <li><strong>Garden Planning:</strong> Review the past season's successes and challenges. Begin planning for next year</li>
+                <li>Harvest remaining cold-tolerant crops like kale and Brussels sprouts</li>
+                <li>Apply winter mulch after ground freezes to prevent heaving</li>
+                <li>Clean, sharpen, and oil tools before winter storage</li>
+                <li>Drain and store hoses; winterize irrigation systems</li>
+                <li>Review the past season's successes and challenges</li>
+                <li>Begin planning for next year's garden</li>
             </ul>
-            
-            <h3>Winter Gardening (December-February)</h3>
-            <p>While outdoor gardening activity slows during winter, this season offers opportunities for planning, maintenance, and indoor gardening projects.</p>
-            
-            <h4>Early Winter Tasks</h4>
-            <p>As cold weather sets in:</p>
-            <ul>
-                <li><strong>Winter Protection Check:</strong> Ensure mulch and protective coverings remain in place after storms</li>
-                <li><strong>Indoor Gardening:</strong> Start forcing bulbs like paperwhites and amaryllis for indoor bloom</li>
-                <li><strong>Seed Ordering:</strong> Browse catalogs and order seeds for next season</li>
-                <li><strong>Bird Care:</strong> Provide food, water, and shelter for overwintering birds</li>
-                <li><strong>Garden Structure Maintenance:</strong> Repair and paint fences, trellises, and other structures</li>
-            </ul>
-            
-            <h4>Mid-Winter Tasks</h4>
-            <p>During the coldest months:</p>
-            <ul>
-                <li><strong>Planning:</strong> Create garden maps and planting schedules for the coming season</li>
-                <li><strong>Indoor Seed Starting:</strong> Begin slow-growing annuals and perennials indoors 10-12 weeks before last frost</li>
-                <li><strong>Pruning:</strong> Prune dormant trees and shrubs (except spring bloomers). Good time to assess structure</li>
-                <li><strong>Tool Maintenance:</strong> Continue cleaning, sharpening, and repairing tools</li>
-                <li><strong>Education:</strong> Attend gardening workshops, read gardening books, and plan to try new techniques</li>
-            </ul>
-            
-            <h4>Late Winter Tasks</h4>
-            <p>As days lengthen and signs of spring appear:</p>
-            <ul>
-                <li><strong>Seed Starting:</strong> Begin tomatoes, peppers, and other warm-season crops indoors 6-8 weeks before last frost</li>
-                <li><strong>Garden Preparation:</strong> On mild days, prepare garden beds as soil becomes workable</li>
-                <li><strong>Pruning:</strong> Finish dormant pruning before buds swell</li>
-                <li><strong>Cold Frame Use:</strong> Begin hardening off seedlings and planting cold-tolerant crops in cold frames</li>
-                <li><strong>Soil Testing:</strong> Test soil pH and nutrient levels before spring amendments</li>
-            </ul>
-            
-            <h3>Regional Considerations</h3>
-            <p>While the basic seasonal tasks apply broadly, specific timing and activities vary by region:</p>
-            
-            <h4>Northern Gardens (Zones 3-5)</h4>
-            <p>Shorter growing seasons require careful timing and season extension techniques:</p>
-            <ul>
-                <li>Focus on cold-tolerant varieties and quick-maturing crops</li>
-                <li>Use season extenders like cold frames and row covers</li>
-                <li>Take advantage of the intense summer light for productive warm-season crops</li>
-                <li>Provide ample winter protection for perennials</li>
-            </ul>
-            
-            <h4>Middle Regions (Zones 6-7)</h4>
-            <p>Moderate climates allow for extended growing seasons:</p>
-            <ul>
-                <li>Enjoy success with both cool and warm-season crops</li>
-                <li>Take advantage of fall planting opportunities for overwintering crops</li>
-                <li>Watch for late spring frosts that can damage tender plants</li>
-                <li>Summer heat may require shade protection for some crops</li>
-            </ul>
-            
-            <h4>Southern Gardens (Zones 8-10)</h4>
-            <p>Long growing seasons with hot summers present unique challenges:</p>
-            <ul>
-                <li>Plant cool-season crops in fall for winter harvest</li>
-                <li>Use shade cloth to protect plants from intense summer sun</li>
-                <li>Select heat-tolerant varieties for summer production</li>
-                <li>Take advantage of the opportunity for year-round gardening in some areas</li>
-            </ul>
-            
-            <h4>Coastal and Microclimates</h4>
-            <p>Local conditions significantly impact gardening schedules:</p>
-            <ul>
-                <li>Coastal gardens may have extended seasons due to temperature moderation</li>
-                <li>Urban gardens often experience warmer conditions (heat island effect)</li>
-                <li>Low-lying areas may have later spring frosts</li>
-                <li>South-facing slopes warm earlier in spring</li>
-            </ul>
-            
-            <h3>Seasonal Pest and Disease Management</h3>
-            <p>Different seasons bring different garden challenges:</p>
-            
-            <h4>Spring Issues</h4>
-            <ul>
-                <li><strong>Slugs and Snails:</strong> Abundant in cool, moist conditions</li>
-                <li><strong>Aphids:</strong> Population explosions on new growth</li>
-                <li><strong>Fungal Diseases:</strong> Powdery mildew and rust in humid conditions</li>
-            </ul>
-            
-            <h4>Summer Issues</h4>
-            <ul>
-                <li><strong>Japanese Beetles:</strong> Emerge in early summer and feed voraciously</li>
-                <li><strong>Squash Bugs and Vine Borers:</strong> Attack cucurbit family plants</li>
-                <li><strong>Tomato Blights:</strong> Spread in warm, humid weather</li>
-            </ul>
-            
-            <h4>Autumn Issues</h4>
-            <ul>
-                <li><strong>Rodents:</strong> Seek shelter and food as temperatures drop</li>
-                <li><strong>Fall Webworms:</strong> Create unsightly nests in trees</li>
-                <li><strong>Slugs:</strong> Return with cooler, wetter weather</li>
-            </ul>
-            
-            <h4>Winter Issues</h4>
-            <ul>
-                <li><strong>Animal Damage:</strong> Deer, rabbits, and voles browse on bark and evergreen foliage</li>
-                <li><strong>Winter Burn:</strong> Evergreens lose moisture through leaves when ground is frozen</li>
-                <li><strong>Snow and Ice Damage:</strong> Heavy snow can break branches</li>
-            </ul>
-            
-            <p>By understanding the seasonal rhythms of your garden and adapting your practices accordingly, you can create a thriving, productive garden that provides beauty and harvest throughout the year.</p>
         </section>
     </main>
 
@@ -1114,6 +681,7 @@
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
                     <a href="#getting-started">Getting Started</a>
                     <a href="#vegetables">Vegetable Gardening</a>
                     <a href="#flowers">Flower Gardens</a>
