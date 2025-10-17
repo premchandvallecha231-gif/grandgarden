@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy - Grand Gardening Pairs</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fff9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2d5a2d;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #a8e4a0;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+        }
+        
+        .policy-header {
+            background-color: #e8f5e8;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .policy-header h1 {
+            color: #2d5a2d;
+            margin-bottom: 1rem;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-style: italic;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2d5a2d;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e8f5e8;
+        }
+        
+        h3 {
+            color: #3a7c3a;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        h4 {
+            color: #4caf50;
+            margin: 1.2rem 0 0.8rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background-color: #f0f8f0;
+            border-left: 4px solid #4caf50;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #e8f5e8;
+            color: #2d5a2d;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .contact-info {
+            background-color: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .cookie-category {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .cookie-table {
+            overflow-x: auto;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1e3d1e;
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: #a8e4a0;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #d1e8d1;
+            margin-bottom: 0.5rem;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2d5a2d;
+        }
+        
+        /* Cookie Preference Center */
+        .cookie-preference {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #2d5a2d;
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .cookie-preference-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #4caf50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #3d8b40;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 0.75rem;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .cookie-preference-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .cookie-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🌿</span>
+                    Grand Gardening Pairs
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#getting-started">Gardening Guide</a></li>
+                        <li><a href="index.html#tools">Tools</a></li>
+                        <li><a href="index.html#seasonal">Seasonal Guide</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookies Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="policy-header">
+            <h1>Cookies Policy</h1>
+            <p class="last-updated">Last Updated: October 15, 2023</p>
+        </div>
+
+        <section id="introduction">
+            <h2>Introduction to Cookies</h2>
+            <p>Welcome to Grand Gardening Pairs' comprehensive Cookies Policy. This document provides detailed information about how we use cookies and similar tracking technologies when you visit our website grandgardeningpairs.com, use our mobile application, or interact with our online services (collectively, the "Services").</p>
+            
+            <p>We believe in being transparent about our use of technologies that impact your online experience. This policy explains what cookies are, how we use them, the types of cookies we use, how you can manage your cookie preferences, and your rights regarding our use of cookies.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Important Notice:</strong> By continuing to use our Services, you consent to our use of cookies as described in this policy, unless you have disabled them through your browser settings or our cookie preference center. You can withdraw your consent at any time by adjusting your cookie preferences.</p>
+            </div>
+            
+            <h3>What Are Cookies?</h3>
+            <p>Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently and provide information to the website owners.</p>
+            
+            <p>Cookies are created when your browser loads a particular website. The website sends information to the browser which then creates a text file. Every time the user returns to the same website, the browser retrieves and sends this file to the website's server, enabling the website to "remember" your preferences and actions over time.</p>
+            
+            <h3>How Cookies Work</h3>
+            <p>When you visit a website that uses cookies, the website server requests permission to store a cookie on your device. If you accept, the cookie is stored as a small text file. When you revisit the same website, your browser sends the cookie back to the server, allowing the website to recognize your browser and remember certain information about you.</p>
+            
+            <p>Cookies typically contain:</p>
+            <ul>
+                <li>The name of the server the cookie was sent from</li>
+                <li>The lifetime of the cookie</li>
+                <li>A value - usually a randomly generated unique number</li>
+            </ul>
+            
+            <p>The website server uses this information to remember your preferences, keep you logged in, track your browsing behavior, or personalize content.</p>
+            
+            <h3>Why Websites Use Cookies</h3>
+            <p>Cookies serve several important functions that enhance the user experience:</p>
+            <ul>
+                <li><strong>Authentication:</strong> Cookies help websites determine if a user is logged in and under which account</li>
+                <li><strong>Session Management:</strong> They allow websites to remember users' actions and preferences during a browsing session</li>
+                <li><strong>Personalization:</strong> Cookies store user preferences, themes, and other settings</li>
+                <li><strong>Tracking:</strong> They monitor and analyze user behavior to improve websites</li>
+                <li><strong>Advertising:</strong> Cookies deliver targeted advertisements based on user interests</li>
+            </ul>
+            
+            <h3>First-Party vs. Third-Party Cookies</h3>
+            <p>It's important to understand the distinction between first-party and third-party cookies:</p>
+            
+            <h4>First-Party Cookies</h4>
+            <p>First-party cookies are set by the website you are visiting directly. They are generally used to remember your preferences, login information, and other functional aspects of the website. These cookies are typically considered less intrusive from a privacy perspective.</p>
+            
+            <h4>Third-Party Cookies</h4>
+            <p>Third-party cookies are set by domains other than the one you are visiting. They are most commonly used for advertising and tracking purposes across multiple websites. For example, if a website includes content from a third party (like an embedded video or social media button), that third party may set a cookie through your browser.</p>
+            
+            <h3>Other Tracking Technologies</h3>
+            <p>In addition to traditional cookies, we and our partners may use other similar tracking technologies:</p>
+            
+            <h4>Web Beacons</h4>
+            <p>Also known as "pixel tags" or "clear GIFs," web beacons are tiny graphics with a unique identifier that are used to track user activity. Unlike cookies, which are stored on a user's device, web beacons are typically embedded in web pages or emails and are used to monitor user behavior and campaign effectiveness.</p>
+            
+            <h4>Local Storage</h4>
+            <p>HTML5 local storage allows websites to store larger amounts of data on a user's device. Unlike cookies, this data is not automatically transmitted to the server with each request. Local storage is often used to improve website performance and enable advanced features.</p>
+            
+            <h4>Session Storage</h4>
+            <p>Similar to local storage, session storage allows websites to store data that persists only for the duration of the page session. The data is deleted when the browser tab is closed.</p>
+            
+            <h4>IndexedDB</h4>
+            <p>IndexedDB is a low-level API for storing significant amounts of structured data, including files and blobs. It's more powerful than local storage and is used for complex web applications.</p>
+            
+            <h3>Legal Framework for Cookies</h3>
+            <p>The use of cookies is regulated by various privacy laws around the world:</p>
+            
+            <h4>General Data Protection Regulation (GDPR)</h4>
+            <p>The GDPR, which applies to users in the European Economic Area (EEA), requires websites to obtain explicit consent for non-essential cookies. The regulation classifies cookies that are strictly necessary for the operation of a website as exempt from the consent requirement.</p>
+            
+            <h4>ePrivacy Directive</h4>
+            <p>Also known as the "Cookie Law," this EU directive specifically addresses the use of cookies and requires informed consent before storing or accessing information on a user's device.</p>
+            
+            <h4>California Consumer Privacy Act (CCPA)</h4>
+            <p>The CCPA gives California residents the right to opt out of the "sale" of their personal information, which may include certain types of cookies used for targeted advertising.</p>
+            
+            <h4>Other Regional Laws</h4>
+            <p>Various other countries have implemented their own regulations regarding cookies and online tracking, including Brazil's LGPD, Canada's PIPEDA, and others.</p>
+            
+            <p>At Grand Gardening Pairs, we are committed to complying with all applicable privacy laws and regulations in the jurisdictions where we operate.</p>
+        </section>
+
+        <section id="types-of-cookies">
+            <h2>Types of Cookies We Use</h2>
+            <p>We use various types of cookies for different purposes. Understanding these categories will help you make informed decisions about which cookies to accept or reject.</p>
+            
+            <div class="cookie-category">
+                <h3>Essential Cookies</h3>
+                <p>Essential cookies (also known as strictly necessary cookies) are required for the basic functionality of our website. They enable core features such as security, network management, and accessibility. Without these cookies, our Services cannot function properly.</p>
+                
+                <h4>Purpose of Essential Cookies</h4>
+                <ul>
+                    <li>Maintain user session state across page requests</li>
+                    <li>Remember items in shopping cart</li>
+                    <li>Provide secure log-in and authentication</li>
+                    <li>Balance website traffic to ensure consistent performance</li>
+                    <li>Remember cookie consent preferences</li>
+                    <li>Enable compliance with security requirements</li>
+                </ul>
+                
+                <h4>Examples of Essential Cookies We Use</h4>
+                <ul>
+                    <li><strong>Session cookies:</strong> Temporary cookies that expire when you close your browser</li>
+                    <li><strong>Authentication cookies:</strong> Identify you when you log into our Services</li>
+                    <li><strong>Security cookies:</strong> Used for security features like detecting repeated failed login attempts</li>
+                    <li><strong>Load balancing cookies:</strong> Distribute website traffic across servers to optimize performance</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <p><strong>Note:</strong> Essential cookies cannot be disabled through our cookie preference center as they are necessary for the basic functionality of our website. However, you can block all cookies through your browser settings, though this may significantly impact your user experience.</p>
+                </div>
+            </div>
+            
+            <div class="cookie-category">
+                <h3>Performance Cookies</h3>
+                <p>Performance cookies (also known as analytics cookies) collect information about how visitors use our website, such as which pages are visited most often, how users navigate between pages, and if they encounter error messages. These cookies help us understand how to improve our Services.</p>
+                
+                <h4>Purpose of Performance Cookies</h4>
+                <ul>
+                    <li>Analyze how visitors use our website</li>
+                    <li>Measure website performance and loading times</li>
+                    <li>Identify technical issues and errors</li>
+                    <li>Understand which features are most popular</li>
+                    <li>Track the effectiveness of our marketing campaigns</li>
+                    <li>Improve website design and functionality based on user behavior</li>
+                </ul>
+                
+                <h4>Data Collected by Performance Cookies</h4>
+                <ul>
+                    <li>Pages visited and time spent on each page</li>
+                    <li>Click patterns and navigation paths</li>
+                    <li>Referral sources (how you arrived at our website)</li>
+                    <li>Browser type and version</li>
+                    <li>Device type and operating system</li>
+                    <li>Country and language settings</li>
+                    <li>Error messages encountered</li>
+                </ul>
+                
+                <h4>How We Use Performance Data</h4>
+                <p>The information collected by performance cookies is aggregated and anonymized, meaning it does not identify individual users. We use this data to:</p>
+                <ul>
+                    <li>Identify popular content and areas for improvement</li>
+                    <li>Optimize website structure and navigation</li>
+                    <li>Improve page loading times</li>
+                    <li>Fix technical issues and bugs</li>
+                    <li>Make informed decisions about website development</li>
+                </ul>
+            </div>
+            
+            <div class="cookie-category">
+                <h3>Functionality Cookies</h3>
+                <p>Functionality cookies allow our website to remember choices you make and provide enhanced, more personal features. These cookies can also be used to remember changes you have made to text size, fonts, and other parts of web pages that you can customize.</p>
+                
+                <h4>Purpose of Functionality Cookies</h4>
+                <ul>
+                    <li>Remember your login details and preferences</li>
+                    <li>Store your language and regional settings</li>
+                    <li>Remember customizations you've made to the website</li>
+                    <li>Provide enhanced features and personalization</li>
+                    <li>Remember if you've already participated in a survey</li>
+                    <li>Store your accessibility settings</li>
+                </ul>
+                
+                <h4>Examples of Functionality Cookies</h4>
+                <ul>
+                    <li><strong>Preference cookies:</strong> Remember your language, region, or other preferences</li>
+                    <li><strong>Customization cookies:</strong> Store information about how you've customized the website layout</li>
+                    <li><strong>Authentication persistence cookies:</strong> Keep you logged in during your browsing session</li>
+                    <li><strong>Multimedia cookies:</strong> Remember your volume settings for videos and audio</li>
+                </ul>
+                
+                <p>Functionality cookies enhance your browsing experience by making our Services more personalized and convenient to use. The information these cookies collect may be anonymized, and they cannot track your browsing activity on other websites.</p>
+            </div>
+            
+            <div class="cookie-category">
+                <h3>Targeting/Advertising Cookies</h3>
+                <p>Targeting or advertising cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns.</p>
+                
+                <h4>Purpose of Targeting Cookies</h4>
+                <ul>
+                    <li>Deliver targeted advertisements based on your interests</li>
+                    <li>Limit the number of times you see the same ad</li>
+                    <li>Measure the effectiveness of advertising campaigns</li>
+                    <li>Build a profile of your interests</li>
+                    <li>Track whether you have clicked on an advertisement</li>
+                    <li>Share information with advertisers about your interactions with ads</li>
+                </ul>
+                
+                <h4>How Targeting Cookies Work</h4>
+                <p>Targeting cookies work by tracking your browsing behavior across different websites. This information is used to create a profile of your interests, which is then used to show you advertisements that are more likely to be relevant to you.</p>
+                
+                <p>These cookies are typically set by advertising networks with the website operator's permission. They remember that you have visited a website, and this information is shared with other organizations such as advertisers.</p>
+                
+                <h4>Our Approach to Targeted Advertising</h4>
+                <p>At Grand Gardening Pairs, we believe in responsible advertising practices. We work with advertising partners who comply with industry self-regulation programs and provide opt-out mechanisms. We never use targeting cookies to collect sensitive personal information without your explicit consent.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Advertising Choices:</strong> You can opt out of targeted advertising from many major advertising networks through the Digital Advertising Alliance, Network Advertising Initiative, or European Interactive Digital Advertising Alliance. Links to these opt-out tools are provided later in this policy.</p>
+                </div>
+            </div>
+            
+            <div class="cookie-category">
+                <h3>Social Media Cookies</h3>
+                <p>Social media cookies are set by social media platforms when you use their features on our website, such as sharing content or logging in with your social media account. These cookies may track your browser across other sites and build a profile of your interests.</p>
+                
+                <h4>Purpose of Social Media Cookies</h4>
+                <ul>
+                    <li>Enable social sharing buttons and embedded content</li>
+                    <li>Track your activity if you are logged into social media</li>
+                    <li>Personalize social media content based on your browsing</li>
+                    <li>Measure the effectiveness of social media campaigns</li>
+                    <li>Allow you to comment on content using your social media account</li>
+                </ul>
+                
+                <h4>Common Social Media Cookies</h4>
+                <ul>
+                    <li><strong>Facebook:</strong> Used for Facebook Like buttons, sharing, and tracking</li>
+                    <li><strong>Twitter:</strong> Used for Twitter share buttons and embedded tweets</li>
+                    <li><strong>LinkedIn:</strong> Used for LinkedIn share buttons and professional networking features</li>
+                    <li><strong>Instagram:</strong> Used for Instagram embedded content</li>
+                    <li><strong>Pinterest:</strong> Used for Pinterest save buttons</li>
+                </ul>
+                
+                <p>These cookies are controlled by the respective social media platforms, and we encourage you to review their privacy policies for more information about how they use cookies and your data.</p>
+            </div>
+            
+            <h3>Cookie Duration</h3>
+            <p>Cookies can be classified based on how long they remain on your device:</p>
+            
+            <h4>Session Cookies</h4>
+            <p>Session cookies are temporary and exist only for the duration of your browsing session. They are deleted automatically when you close your browser. These cookies are typically used for essential functions like maintaining your logged-in status or shopping cart contents.</p>
+            
+            <h4>Persistent Cookies</h4>
+            <p>Persistent cookies remain on your device for a set period specified in the cookie file. They are activated each time you visit the website that created that particular cookie. Persistent cookies are used for functions like remembering your preferences or login details for future visits.</p>
+            
+            <p>The lifespan of persistent cookies varies significantly - some may expire after a few days, while others may remain for several years unless manually deleted.</p>
+        </section>
+
+        <section id="specific-cookies">
+            <h2>Specific Cookies We Use</h2>
+            <p>This section provides a comprehensive list of the specific cookies we use on our website, organized by category and purpose. We strive to maintain transparency about all tracking technologies deployed on our Services.</p>
+            
+            <h3>Our First-Party Cookies</h3>
+            <p>First-party cookies are set directly by Grand Gardening Pairs and are essential for the proper functioning of our website.</p>
+            
+            <div class="cookie-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cookie Name</th>
+                            <th>Category</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                            <th>Data Collected</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ggp_session</td>
+                            <td>Essential</td>
+                            <td>Maintains user session state across page requests</td>
+                            <td>Session</td>
+                            <td>Session ID, user preferences</td>
+                        </tr>
+                        <tr>
+                            <td>ggp_auth</td>
+                            <td>Essential</td>
+                            <td>Remembers your login status</td>
+                            <td>30 days</td>
+                            <td>Encrypted authentication token</td>
+                        </tr>
+                        <tr>
+                            <td>ggp_cart</td>
+                            <td>Essential</td>
+                            <td>Stores items in your shopping cart</td>
+                            <td>7 days</td>
+                            <td>Product IDs, quantities, cart total</td>
+                        </tr>
+                        <tr>
+                            <td>ggp_consent</td>
+                            <td>Essential</td>
+                            <td>Remembers your cookie consent preferences</td>
+                            <td>1 year</td>
+                            <td>Consent status for each cookie category</td>
+                        </tr>
+                        <tr>
+                            <td>ggp_preferences</td>
+                            <td>Functionality</td>
+                            <td>Stores your website preferences and settings</td>
+                            <td>1 year</td>
+                            <td>Language, region, theme, layout preferences</td>
+                        </tr>
+                        <tr>
+                            <td>ggp_analytics</td>
+                            <td>Performance</td>
+                            <td>Tracks website usage for analytics purposes</td>
+                            <td>2 years</td>
+                            <td>Anonymous usage data, page views, click paths</td>
+                        </tr>
+                        <tr>
+                            <td>ggp_recents</td>
+                            <td>Functionality</td>
+                            <td>Remembers recently viewed products and pages</td>
+                            <td>30 days</td>
+                            <td>Product IDs, page URLs, timestamps</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Third-Party Analytics Cookies</h3>
+            <p>We use third-party analytics services to help us understand how visitors interact with our website. These services use cookies to collect information and report website usage statistics without personally identifying individual visitors.</p>
+            
+            <div class="cookie-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service Provider</th>
+                            <th>Cookie Names</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                            <th>Opt-Out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Google Analytics</td>
+                            <td>_ga, _gid, _gat</td>
+                            <td>Website analytics and performance measurement</td>
+                            <td>2 years, 24 hours, 1 minute</td>
+                            <td><a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hotjar</td>
+                            <td>_hjTLDTest, _hjid, _hjIncludedInPageviewSample</td>
+                            <td>User behavior analysis and heatmaps</td>
+                            <td>Session, 1 year, 30 minutes</td>
+                            <td><a href="https://www.hotjar.com/legal/compliance/opt-out" target="_blank">Hotjar Opt-out</a></td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Clarity</td>
+                            <td>CLID, ANONCHK, MUID</td>
+                            <td>User session recording and analysis</td>
+                            <td>1 year, 10 minutes, 1 year</td>
+                            <td><a href="https://clarity.microsoft.com/opt-out" target="_blank">Clarity Opt-out</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Advertising and Marketing Cookies</h3>
+            <p>We work with advertising partners to deliver relevant advertisements to you on our website and across the internet. These partners may set cookies to track your interactions and build a profile of your interests.</p>
+            
+            <div class="cookie-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service Provider</th>
+                            <th>Cookie Names</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                            <th>Opt-Out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Google Ads</td>
+                            <td>IDE, test_cookie, _gcl_au</td>
+                            <td>Ad targeting, conversion tracking, remarketing</td>
+                            <td>1 year, 15 minutes, 3 months</td>
+                            <td><a href="https://adssettings.google.com" target="_blank">Google Ads Settings</a></td>
+                        </tr>
+                        <tr>
+                            <td>Facebook Pixel</td>
+                            <td>fr, _fbp, datr</td>
+                            <td>Ad targeting, conversion tracking, audience building</td>
+                            <td>3 months, 3 months, 2 years</td>
+                            <td><a href="https://www.facebook.com/ads/preferences" target="_blank">Facebook Ad Preferences</a></td>
+                        </tr>
+                        <tr>
+                            <td>LinkedIn Insight Tag</td>
+                            <td>lidc, bcookie, UserMatchHistory</td>
+                            <td>Ad targeting, conversion tracking, audience insights</td>
+                            <td>24 hours, 2 years, 30 days</td>
+                            <td><a href="https://www.linkedin.com/psettings/guest-controls" target="_blank">LinkedIn Privacy Controls</a></td>
+                        </tr>
+                        <tr>
+                            <td>Pinterest Tag</td>
+                            <td>_pinterest_ct_ua, _pinterest_sess</td>
+                            <td>Ad targeting, conversion tracking, audience insights</td>
+                            <td>1 year, 1 year</td>
+                            <td><a href="https://help.pinterest.com/en/article/personalization-and-data" target="_blank">Pinterest Personalization</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Social Media Cookies</h3>
+            <p>We integrate social media features that may set cookies when you interact with them. These cookies enable social sharing functionality and may track your activity across websites.</p>
+            
+            <div class="cookie-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Cookie Names</th>
+                            <th>Purpose</th>
+                            <th>Duration</th>
+                            <th>More Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>sb, wd, c_user</td>
+                            <td>Social sharing, embedded content, login</td>
+                            <td>2 years, session, 90 days</td>
+                            <td><a href="https://www.facebook.com/policies/cookies/" target="_blank">Facebook Cookies Policy</a></td>
+                        </tr>
+                        <tr>
+                            <td>Twitter</td>
+                            <td>personalization_id, guest_id, ct0</td>
+                            <td>Social sharing, embedded tweets, login</td>
+                            <td>2 years, 2 years, 6 hours</td>
+                            <td><a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies" target="_blank">Twitter Cookies</a></td>
+                        </tr>
+                        <tr>
+                            <td>Instagram</td>
+                            <td>ig_did, ig_nrcb, shbid</td>
+                            <td>Embedded content, social features</td>
+                            <td>Indefinite, session, 1 year</td>
+                            <td><a href="https://help.instagram.com/1896641480634370" target="_blank">Instagram Cookies</a></td>
+                        </tr>
+                        <tr>
+                            <td>YouTube</td>
+                            <td>VISITOR_INFO1_LIVE, YSC, GPS</td>
+                            <td>Embedded videos, preferences, analytics</td>
+                            <td>6 months, session, 30 minutes</td>
+                            <td><a href="https://policies.google.com/technologies/cookies" target="_blank">Google Cookies Policy</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Changes to Our Cookie Usage</h3>
+            <p>We regularly review our use of cookies and may add or remove cookies as our Services evolve. We will update this policy to reflect any changes in our cookie practices. The "Last Updated" date at the top of this policy indicates when it was last revised.</p>
+            
+            <p>If we make significant changes to how we use cookies, we will notify you through a prominent notice on our website or through other communication channels, and we will obtain your consent where required by law.</p>
+        </section>
+
+        <section id="cookie-management">
+            <h2>Managing Your Cookie Preferences</h2>
+            <p>You have several options for managing cookies and controlling how your information is collected and used. This section explains the various methods available to you.</p>
+            
+            <h3>Our Cookie Consent Tool</h3>
+            <p>We provide a cookie consent management tool that allows you to customize your cookie preferences. When you first visit our website, you will see a cookie banner that explains our use of cookies and allows you to:</p>
+            
+            <ul>
+                <li><strong>Accept All Cookies:</strong> Consent to all categories of cookies</li>
+                <li><strong>Reject All Non-Essential Cookies:</strong> Only allow essential cookies</li>
+                <li><strong>Customize Preferences:</strong> Choose which categories of cookies to accept</li>
+            </ul>
+            
+            <h4>How to Access Cookie Preferences</h4>
+            <p>You can access and change your cookie preferences at any time by:</p>
+            <ol>
+                <li>Clicking on the "Cookie Preferences" link in the footer of our website</li>
+                <li>Clicking on the cookie icon typically located in the bottom corner of the screen</li>
+                <li>Clearing your browser cookies, which will trigger the cookie banner to reappear</li>
+            </ol>
+            
+            <h4>Granular Cookie Controls</h4>
+            <p>Our cookie preference center allows you to enable or disable specific categories of cookies:</p>
+            
+            <ul>
+                <li><strong>Essential Cookies:</strong> Always active as they are necessary for website functionality</li>
+                <li><strong>Performance Cookies:</strong> Can be toggled on or off</li>
+                <li><strong>Functionality Cookies:</strong> Can be toggled on or off</li>
+                <li><strong>Targeting Cookies:</strong> Can be toggled on or off</li>
+                <li><strong>Social Media Cookies:</strong> Can be toggled on or off</li>
+            </ul>
+            
+            <p>When you change your preferences, we will update our cookie usage accordingly. Please note that if you disable certain categories of cookies, some features of our website may not function properly.</p>
+            
+            <h3>Browser Controls</h3>
+            <p>All modern web browsers allow you to manage your cookie preferences through their settings. The exact process varies by browser, but generally, you can:</p>
+            
+            <h4>Block All Cookies</h4>
+            <p>You can set your browser to block all cookies, including essential ones. However, this may prevent our website from functioning properly, and you may not be able to access all or parts of our Services.</p>
+            
+            <h4>Block Third-Party Cookies</h4>
+            <p>Most browsers allow you to block only third-party cookies while allowing first-party cookies. This is often a good balance between privacy and functionality.</p>
+            
+            <h4>Delete Existing Cookies</h4>
+            <p>You can delete cookies that have already been set on your device. This will log you out of websites and reset your preferences.</p>
+            
+            <h4>Browser-Specific Instructions</h4>
+            <p>Here are links to cookie management instructions for popular browsers:</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank">Apple Safari</a></li>
+                <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">Microsoft Edge</a></li>
+                <li><a href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd" target="_blank">Internet Explorer</a></li>
+            </ul>
+            
+            <h3>Industry Opt-Out Tools</h3>
+            <p>For advertising cookies specifically, there are industry-wide programs that allow you to opt out of targeted advertising:</p>
+            
+            <h4>Digital Advertising Alliance (DAA)</h4>
+            <p>The DAA offers a tool called WebChoices that allows you to control interest-based advertising from participating companies.</p>
+            <p><a href="https://optout.aboutads.info/" target="_blank">DAA Opt-Out Tool</a></p>
+            
+            <h4>Network Advertising Initiative (NAI)</h4>
+            <p>The NAI provides an opt-out tool for members who use data for interest-based advertising.</p>
+            <p><a href="https://optout.networkadvertising.org/" target="_blank">NAI Opt-Out Tool</a></p>
+            
+            <h4>European Interactive Digital Advertising Alliance (EDAA)</h4>
+            <p>The EDAA offers the Your Online Choices program for European users to control online behavioral advertising.</p>
+            <p><a href="https://www.youronlinechoices.com/" target="_blank">Your Online Choices</a></p>
+            
+            <h4>Important Notes About Opt-Out Tools</h4>
+            <ul>
+                <li>Opt-outs are often cookie-based, so if you clear your cookies, you may need to opt out again</li>
+                <li>Opt-outs apply to the specific browser and device you use - you'll need to opt out on each browser and device</li>
+                <li>Opting out doesn't mean you won't see ads, just that they won't be targeted based on your interests</li>
+                <li>Some opt-out tools may not work if your browser is set to block all cookies</li>
+            </ul>
+            
+            <h3>Do Not Track Signals</h3>
+            <p>Some browsers include a "Do Not Track" (DNT) feature that sends a signal to websites indicating that you do not want to be tracked. Currently, there is no common standard for how to respond to DNT signals, and our website does not currently respond to these signals.</p>
+            
+            <p>Instead, we provide the cookie management options described above to give you control over your privacy.</p>
+            
+            <h3>Mobile Device Controls</h3>
+            <p>If you access our Services through a mobile device, you may have additional options for controlling cookies and tracking:</p>
+            
+            <h4>iOS Devices</h4>
+            <p>On Apple iOS devices, you can limit ad tracking through the Settings app:</p>
+            <ol>
+                <li>Go to Settings > Privacy & Security > Tracking</li>
+                <li>Toggle "Allow Apps to Request to Track" to disable tracking requests</li>
+            </ol>
+            
+            <h4>Android Devices</h4>
+            <p>On Android devices, you can opt out of personalized ads:</p>
+            <ol>
+                <li>Go to Settings > Google > Ads</li>
+                <li>Enable "Opt out of Ads Personalization"</li>
+            </ol>
+            
+            <h3>Impact of Disabling Cookies</h3>
+            <p>It's important to understand how disabling different types of cookies may affect your experience on our website:</p>
+            
+            <h4>Essential Cookies</h4>
+            <p>If you disable essential cookies, our website may not function properly. You may not be able to:</p>
+            <ul>
+                <li>Stay logged into your account</li>
+                <li>Add items to your shopping cart</li>
+                <li>Complete purchases</li>
+                <li>Access secure areas of the website</li>
+            </ul>
+            
+            <h4>Performance Cookies</h4>
+            <p>If you disable performance cookies, we won't be able to gather information about how you use our website, which may limit our ability to improve our Services based on user behavior.</p>
+            
+            <h4>Functionality Cookies</h4>
+            <p>If you disable functionality cookies, the website may not remember your preferences, and you may need to reset them each time you visit.</p>
+            
+            <h4>Targeting Cookies</h4>
+            <p>If you disable targeting cookies, you may still see advertisements, but they will be less relevant to your interests.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Recommendation:</strong> We recommend allowing essential and functionality cookies for the best user experience. You can disable performance and targeting cookies if you have privacy concerns, though this may limit some website features.</p>
+            </div>
+        </section>
+
+        <section id="data-retention">
+            <h2>Data Retention and Storage</h2>
+            <p>This section explains how long we retain data collected through cookies and where this data is stored.</p>
+            
+            <h3>Cookie Lifespan</h3>
+            <p>Different cookies have different lifespans, as indicated in our cookie tables. The duration for which a cookie remains on your device depends on its type:</p>
+            
+            <h4>Session Cookies</h4>
+            <p>Session cookies are temporary and are deleted automatically when you close your browser. They do not have an expiration date set.</p>
+            
+            <h4>Persistent Cookies</h4>
+            <p>Persistent cookies remain on your device until they expire or until you delete them. The expiration period varies by cookie and can range from a few hours to several years.</p>
+            
+            <h3>Data Storage Locations</h3>
+            <p>Data collected through cookies may be stored in different locations:</p>
+            
+            <h4>On Your Device</h4>
+            <p>Cookies themselves are stored locally on your device. The specific location varies by browser and operating system but is typically in a dedicated cookies folder.</p>
+            
+            <h4>On Our Servers</h4>
+            <p>When cookies transmit data to our servers, that data is stored in secure data centers. We use industry-standard security measures to protect this data.</p>
+            
+            <h4>Third-Party Servers</h4>
+            <p>Data collected by third-party cookies is stored on the servers of those third parties, subject to their respective privacy policies and data protection practices.</p>
+            
+            <h3>Data Aggregation and Anonymization</h3>
+            <p>For analytics and performance cookies, we typically aggregate and anonymize data shortly after collection. This means that the data can no longer be linked back to individual users.</p>
+            
+            <p>Personal data collected through cookies is processed in accordance with our Privacy Policy, which outlines our data protection principles and your rights regarding your personal information.</p>
+            
+            <h3>Data Deletion</h3>
+            <p>You can delete cookies at any time through your browser settings. When you delete cookies, the data associated with those cookies is removed from your device.</p>
+            
+            <p>For data stored on our servers, we have retention policies that determine how long we keep different types of data. In general:</p>
+            <ul>
+                <li>Personal data is retained only as long as necessary for the purposes for which it was collected</li>
+                <li>Aggregated and anonymized data may be retained indefinitely for statistical purposes</li>
+                <li>We regularly review our data retention practices to ensure compliance with applicable laws</li>
+            </ul>
+        </section>
+
+        <section id="updates-changes">
+            <h2>Updates to This Cookies Policy</h2>
+            <p>We may update this Cookies Policy from time to time to reflect changes in our practices, technologies, legal requirements, or other factors. We encourage you to periodically review this policy to stay informed about how we use cookies.</p>
+            
+            <h3>How We Notify You of Changes</h3>
+            <p>When we make changes to this Cookies Policy, we will:</p>
+            
+            <ul>
+                <li>Update the "Last Updated" date at the top of this policy</li>
+                <li>Post a notice on our website for significant changes</li>
+                <li>Where required by law, obtain your consent for material changes to our cookie practices</li>
+            </ul>
+            
+            <h3>Historical Versions</h3>
+            <p>We maintain an archive of previous versions of this Cookies Policy. If you would like to review a previous version, please contact us using the contact information provided below.</p>
+            
+            <h3>Your Continued Use</h3>
+            <p>Your continued use of our Services after any changes to this Cookies Policy constitutes your acceptance of the updated policy. If you do not agree with the changes, you should adjust your cookie preferences or discontinue using our Services.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, concerns, or requests regarding this Cookies Policy or our use of cookies, please contact us:</p>
+            
+            <div class="contact-info">
+                <p><strong>Grand Gardening Pairs</strong></p>
+                <p>123 Green Thumb Lane, Gardenville, CA 90210</p>
+                <p>Email: privacy@grandgardeningpairs.com</p>
+                <p>Phone: +1-888-929-2292</p>
+            </div>
+            
+            <h3>Data Protection Officer</h3>
+            <p>We have appointed a Data Protection Officer (DPO) who is responsible for overseeing questions in relation to this Cookies Policy. If you have any questions about this policy, including any requests to exercise your legal rights, please contact the DPO using the details set out above.</p>
+            
+            <h3>Response Time</h3>
+            <p>We endeavor to respond to all legitimate requests within one month. Occasionally it may take us longer than a month if your request is particularly complex or you have made a number of requests. In this case, we will notify you and keep you updated.</p>
+        </section>
+    </main>
+
+    <div class="cookie-preference" id="cookieBanner" style="display: none;">
+        <div class="cookie-preference-content">
+            <div class="cookie-message">
+                <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. You can manage your preferences at any time.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="btn btn-outline" onclick="showCookiePreferences()">Preferences</button>
+                <button class="btn" onclick="acceptAllCookies()">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grand Gardening Pairs</h3>
+                    <p>Your trusted partner in creating beautiful and productive gardens. We provide expert advice, quality resources, and inspiration for gardeners of all skill levels.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> 123 Green Thumb Lane, Gardenville, CA 90210</p>
+                    <p><strong>Phone:</strong> +1-888-929-2292</p>
+                    <p><strong>Email:</strong> info@grandgardeningpairs.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#getting-started">Getting Started</a>
+                    <a href="index.html#vegetables">Vegetable Gardening</a>
+                    <a href="index.html#flowers">Flower Gardens</a>
+                    <a href="index.html#tools">Gardening Tools</a>
+                    <a href="index.html#seasonal">Seasonal Guide</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookies Policy</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for seasonal gardening tips, exclusive content, and special offers.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" style="padding: 0.5rem; width: 100%; margin-bottom: 0.5rem; border-radius: 4px; border: none;">
+                        <button type="submit" class="btn" style="width: 100%; background-color: #4caf50; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 4px; cursor: pointer;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Grand Gardening Pairs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple cookie consent management
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user has already made a cookie choice
+            if (!getCookie('ggp_consent')) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        });
+
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = `expires=${date.toUTCString()}`;
+            document.cookie = `${name}=${value}; ${expires}; path=/; SameSite=Lax`;
+        }
+
+        function acceptAllCookies() {
+            setCookie('ggp_consent', 'all', 365);
+            document.getElementById('cookieBanner').style.display = 'none';
+            // In a real implementation, you would load all cookies here
+        }
+
+        function showCookiePreferences() {
+            // In a real implementation, this would show a detailed preference center
+            alert('In a full implementation, this would open a detailed cookie preference center where you can select which types of cookies to accept.');
+        }
+    </script>
+</body>
+</html>
