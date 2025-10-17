@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Grand Gardening Pairs</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fff9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2d5a2d;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #a8e4a0;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 2rem 0;
+        }
+        
+        .terms-header {
+            background-color: #e8f5e8;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .terms-header h1 {
+            color: #2d5a2d;
+            margin-bottom: 1rem;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-style: italic;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2d5a2d;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e8f5e8;
+        }
+        
+        h3 {
+            color: #3a7c3a;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        h4 {
+            color: #4caf50;
+            margin: 1.2rem 0 0.8rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background-color: #f0f8f0;
+            border-left: 4px solid #4caf50;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #e8f5e8;
+            color: #2d5a2d;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .contact-info {
+            background-color: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .definition-list {
+            margin: 1.5rem 0;
+        }
+        
+        .definition-term {
+            font-weight: bold;
+            color: #2d5a2d;
+            margin-bottom: 0.5rem;
+        }
+        
+        .definition-description {
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+        }
+        
+        .note-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .warning-box {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1e3d1e;
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: #a8e4a0;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #d1e8d1;
+            margin-bottom: 0.5rem;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2d5a2d;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 0.75rem;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background-color: #f0f8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+        }
+        
+        .toc ul {
+            columns: 2;
+            column-gap: 2rem;
+        }
+        
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .toc a {
+            color: #2d5a2d;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .toc ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🌿</span>
+                    Grand Gardening Pairs
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#getting-started">Gardening Guide</a></li>
+                        <li><a href="index.html#tools">Tools</a></li>
+                        <li><a href="index.html#seasonal">Seasonal Guide</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookies Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="terms-header">
+            <h1>Terms and Conditions</h1>
+            <p class="last-updated">Last Updated: October 15, 2023</p>
+        </div>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#agreement">1. Agreement to Terms</a></li>
+                <li><a href="#changes">2. Changes to Terms</a></li>
+                <li><a href="#privacy">3. Privacy Policy</a></li>
+                <li><a href="#eligibility">4. Eligibility</a></li>
+                <li><a href="#accounts">5. Accounts</a></li>
+                <li><a href="#services">6. Our Services</a></li>
+                <li><a href="#purchases">7. Purchases and Payment</a></li>
+                <li><a href="#shipping">8. Shipping and Delivery</a></li>
+                <li><a href="#returns">9. Returns and Refunds</a></li>
+                <li><a href="#intellectual-property">10. Intellectual Property</a></li>
+                <li><a href="#user-content">11. User Content</a></li>
+                <li><a href="#prohibited">12. Prohibited Activities</a></li>
+                <li><a href="#third-party">13. Third-Party Links</a></li>
+                <li><a href="#termination">14. Termination</a></li>
+                <li><a href="#disclaimer">15. Disclaimer</a></li>
+                <li><a href="#limitation">16. Limitation of Liability</a></li>
+                <li><a href="#indemnification">17. Indemnification</a></li>
+                <li><a href="#disputes">18. Dispute Resolution</a></li>
+                <li><a href="#governing-law">19. Governing Law</a></li>
+                <li><a href="#miscellaneous">20. Miscellaneous</a></li>
+                <li><a href="#contact">21. Contact Information</a></li>
+            </ul>
+        </div>
+
+        <section id="agreement">
+            <h2>1. Agreement to Terms</h2>
+            <p>These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and Grand Gardening Pairs ("we," "us," or "our"), concerning your access to and use of the grandgardeningpairs.com website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the "Site").</p>
+            
+            <p>You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms and Conditions. If you do not agree with all of these Terms and Conditions, then you are expressly prohibited from using the Site and you must discontinue use immediately.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Important Notice:</strong> Supplemental terms and conditions or documents that may be posted on the Site from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms and Conditions at any time and for any reason.</p>
+            </div>
+            
+            <h3>1.1. Electronic Communications</h3>
+            <p>Visiting the Site, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communication be in writing.</p>
+            
+            <h3>1.2. Capacity to Contract</h3>
+            <p>You hereby represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this Site.</p>
+            
+            <h3>1.3. Geographic Restrictions</h3>
+            <p>The owner of the Site is based in the United States. We provide this Site for use only by persons located in the United States. We make no claims that the Site or any of its content is accessible or appropriate outside of the United States. Access to the Site may not be legal by certain persons or in certain countries. If you access the Site from outside the United States, you do so on your own initiative and are responsible for compliance with local laws.</p>
+            
+            <h3>1.4. Translations</h3>
+            <p>These Terms and Conditions may have been translated if we have made them available to you on our Service. You agree that the original English text shall prevail in the case of a dispute.</p>
+        </section>
+
+        <section id="changes">
+            <h2>2. Changes to Terms</h2>
+            <p>We reserve the right, at our sole discretion, to change, modify, add, or remove portions of these Terms and Conditions at any time. It is your responsibility to check these Terms and Conditions periodically for changes.</p>
+            
+            <h3>2.1. Notification of Changes</h3>
+            <p>We will notify you of any material changes to these Terms and Conditions by posting the new Terms and Conditions on this page and updating the "Last Updated" date at the top of these Terms and Conditions. We may also, in our discretion, choose to notify you of changes via email or other means.</p>
+            
+            <h3>2.2. Acceptance of Changes</h3>
+            <p>Your continued use of the Site following the posting of revised Terms and Conditions means that you accept and agree to the changes. You are expected to check this page frequently so you are aware of any changes, as they are binding on you.</p>
+            
+            <h3>2.3. Material Changes</h3>
+            <p>For any material changes to these Terms and Conditions, we will make reasonable efforts to provide notice to you through the Site or by email. What constitutes a material change will be determined at our sole discretion.</p>
+            
+            <div class="note-box">
+                <p><strong>Note:</strong> By continuing to access or use our Site after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you must stop using the Service.</p>
+            </div>
+        </section>
+
+        <section id="privacy">
+            <h2>3. Privacy Policy</h2>
+            <p>We care about data privacy and security. Please review our Privacy Policy, which also governs your use of the Site. By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms and Conditions.</p>
+            
+            <h3>3.1. Data Collection and Use</h3>
+            <p>Our Privacy Policy explains how we collect, use, and share your personal information when you use our Site. Please read it carefully to understand our views and practices regarding your personal data and how we will treat it.</p>
+            
+            <h3>3.2. Cookies</h3>
+            <p>Our Site uses cookies and similar technologies. For detailed information about the cookies we use and the purposes for which we use them, see our Cookies Policy.</p>
+            
+            <h3>3.3. Third-Party Services</h3>
+            <p>Our Privacy Policy also covers how we may share your information with third parties. We encourage you to review it to understand our practices.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Important:</strong> Our Privacy Policy is designed to help you understand what information we collect, why we collect it, and how you can update, manage, export, and delete your information. We encourage you to read it carefully.</p>
+            </div>
+        </section>
+
+        <section id="eligibility">
+            <h2>4. Eligibility</h2>
+            <p>The Site is intended for users who are at least 13 years of age. All users who are minors in the jurisdiction in which they reside (generally under the age of 18) must have the permission of, and be directly supervised by, their parent or guardian to use the Site.</p>
+            
+            <h3>4.1. Age Restrictions</h3>
+            <p>If you are under 13 years of age, you are not permitted to register for the Site or use any of its features. If we learn we have collected personal information from a child under 13, we will delete that information as quickly as possible.</p>
+            
+            <h3>4.2. Parental Consent</h3>
+            <p>If you are between the ages of 13 and the age of legal majority in your jurisdiction, you may only use the Site under the supervision of a parent or legal guardian who agrees to be bound by these Terms and Conditions.</p>
+            
+            <h3>4.3. Account Responsibility</h3>
+            <p>If you create an account on the Site, you are responsible for maintaining the security of your account, and you are fully responsible for all activities that occur under the account and any other actions taken in connection with it.</p>
+            
+            <div class="warning-box">
+                <p><strong>Warning:</strong> Providing false contact information of any kind may result in the termination of your account. You must immediately notify us of any unauthorized uses of your account or any other breaches of security.</p>
+            </div>
+        </section>
+
+        <section id="accounts">
+            <h2>5. Accounts</h2>
+            <p>When you create an account with us, you must provide us with information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms and Conditions, which may result in immediate termination of your account on our Service.</p>
+            
+            <h3>5.1. Account Registration</h3>
+            <p>To access certain features of the Site, you may be required to register for an account. When you register, you agree to:</p>
+            <ul>
+                <li>Provide accurate, current, and complete information</li>
+                <li>Maintain and promptly update your information</li>
+                <li>Maintain the security of your password and accept all risks of unauthorized access</li>
+                <li>Notify us immediately if you discover or suspect any security breaches</li>
+                <li>Take responsibility for all activities that occur under your account</li>
+            </ul>
+            
+            <h3>5.2. Account Security</h3>
+            <p>You are responsible for safeguarding the password that you use to access the Site and for any activities or actions under your password. We encourage you to use "strong" passwords (passwords that use a combination of upper and lower case letters, numbers, and symbols) with your account.</p>
+            
+            <h3>5.3. Account Termination</h3>
+            <p>We may, in our sole discretion, suspend or terminate your account and refuse any and all current or future use of the Site (or any portion thereof) for any reason at any time. Such termination of the Service will result in the deactivation or deletion of your Account or your access to your Account.</p>
+            
+            <h3>5.4. Account Inactivity</h3>
+            <p>We reserve the right to disable any user account at any time in our sole discretion for any reason, including if, in our opinion, you have violated any provision of these Terms and Conditions or if your account has been inactive for an extended period.</p>
+            
+            <h3>5.5. Multiple Accounts</h3>
+            <p>You may not create more than one personal account. If we discover that you have created multiple accounts, we may suspend or terminate all of your accounts.</p>
+        </section>
+
+        <section id="services">
+            <h2>6. Our Services</h2>
+            <p>Grand Gardening Pairs provides comprehensive gardening resources, products, and services through our Site. This section outlines the nature of our services and your rights and responsibilities when using them.</p>
+            
+            <h3>6.1. Service Description</h3>
+            <p>Our Services include, but are not limited to:</p>
+            <ul>
+                <li>Providing gardening information, guides, and educational content</li>
+                <li>Selling gardening tools, supplies, and plants</li>
+                <li>Offering personalized gardening advice and consultations</li>
+                <li>Facilitating community discussions and user-generated content</li>
+                <li>Providing seasonal gardening calendars and planning tools</li>
+                <li>Offering subscription services for regular deliveries of gardening supplies</li>
+            </ul>
+            
+            <h3>6.2. Service Modifications</h3>
+            <p>We reserve the right to withdraw or amend our Site, and any service or material we provide on the Site, in our sole discretion without notice. We will not be liable if for any reason all or any part of the Site is unavailable at any time or for any period.</p>
+            
+            <h3>6.3. Service Availability</h3>
+            <p>We do not guarantee that the Site or any content will be available without interruption. We may suspend, withdraw, discontinue, or change all or any part of our Site without notice. We will not be liable to you if for any reason our Site is unavailable at any time or for any period.</p>
+            
+            <h3>6.4. Geographic Limitations</h3>
+            <p>Some aspects of our Services may not be available in all geographic locations. We reserve the right to limit the availability of our Services to any person, geographic area, or jurisdiction at our sole discretion.</p>
+            
+            <h3>6.5. Technical Requirements</h3>
+            <p>You are responsible for making all arrangements necessary for you to have access to our Site. You are also responsible for ensuring that all persons who access our Site through your internet connection are aware of these Terms and Conditions and comply with them.</p>
+            
+            <div class="note-box">
+                <p><strong>Note:</strong> Our Services are constantly evolving, and we may add or remove features, products, or services at any time. We will make reasonable efforts to notify you of significant changes to our Services.</p>
+            </div>
+        </section>
+
+        <section id="purchases">
+            <h2>7. Purchases and Payment</h2>
+            <p>If you wish to purchase any product or service made available through the Site ("Purchase"), you may be asked to supply certain information relevant to your Purchase including, without limitation, your credit card number, the expiration date of your credit card, your billing address, and your shipping information.</p>
+            
+            <h3>7.1. Payment Methods</h3>
+            <p>We accept various payment methods, including:</p>
+            <ul>
+                <li>Visa, MasterCard, American Express, and Discover credit cards</li>
+                <li>PayPal</li>
+                <li>Apple Pay and Google Pay</li>
+                <li>Other payment methods as we may make available from time to time</li>
+            </ul>
+            
+            <h3>7.2. Payment Processing</h3>
+            <p>All payments are processed through secure third-party payment processors. By providing a payment method, you represent and warrant that you are authorized to use the designated payment method and that you authorize us (or our third-party payment processor) to charge your payment method for the total amount of your Purchase (including any applicable taxes and other charges).</p>
+            
+            <h3>7.3. Pricing and Taxes</h3>
+            <p>All prices on the Site are in U.S. dollars and are subject to change without notice. We reserve the right to correct any pricing errors on our Site, even if we have already requested or received payment.</p>
+            
+            <p>You are responsible for any sales, use, value-added, or other taxes due with respect to your Purchase. We will collect applicable sales tax if we determine that we have a duty to collect sales tax.</p>
+            
+            <h3>7.4. Order Acceptance</h3>
+            <p>All orders are subject to acceptance by us. We may refuse or cancel any order for any reason at any time, including for errors in the description or price of the product, error in your order, or suspected fraud.</p>
+            
+            <h3>7.5. Subscription Services</h3>
+            <p>Some of our Services may be offered on a subscription basis. If you purchase a subscription:</p>
+            <ul>
+                <li>Your subscription will automatically renew at the end of each billing cycle</li>
+                <li>You authorize us to charge the then-applicable fees to your payment method</li>
+                <li>You may cancel your subscription at any time through your account settings</li>
+                <li>Cancellation will take effect at the end of the current billing cycle</li>
+            </ul>
+            
+            <h3>7.6. Refunds</h3>
+            <p>Refund policies for specific products and services are detailed in our Returns and Refunds policy. Generally, we do not provide refunds for digital products or services once they have been accessed or downloaded.</p>
+            
+            <div class="warning-box">
+                <p><strong>Important:</strong> By completing a purchase, you agree to pay all charges at the prices then in effect for your purchases and any applicable shipping fees, and you authorize us to charge your chosen payment provider for any such amounts.</p>
+            </div>
+        </section>
+
+        <section id="shipping">
+            <h2>8. Shipping and Delivery</h2>
+            <p>This section outlines our shipping policies, delivery timelines, and related information for physical products ordered through our Site.</p>
+            
+            <h3>8.1. Shipping Methods and Timelines</h3>
+            <p>We offer several shipping options:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Shipping Method</th>
+                        <th>Delivery Time</th>
+                        <th>Cost</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard Shipping</td>
+                        <td>5-7 business days</td>
+                        <td>$5.99</td>
+                        <td>Free on orders over $50</td>
+                    </tr>
+                    <tr>
+                        <td>Expedited Shipping</td>
+                        <td>2-3 business days</td>
+                        <td>$12.99</td>
+                        <td>Available for most items</td>
+                    </tr>
+                    <tr>
+                        <td>Overnight Shipping</td>
+                        <td>1 business day</td>
+                        <td>$24.99</td>
+                        <td>Order by 2 PM EST</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>8.2. Shipping Restrictions</h3>
+            <p>Some products have shipping restrictions due to their nature:</p>
+            <ul>
+                <li>Live plants may have seasonal shipping restrictions</li>
+                <li>Certain tools and equipment may not be shippable to all locations</li>
+                <li>International shipping is limited to select countries</li>
+                <li>Some items may require special handling or additional fees</li>
+            </ul>
+            
+            <h3>8.3. Delivery Issues</h3>
+            <p>If you experience any issues with delivery, please contact us within 7 days of the expected delivery date. We will work with the shipping carrier to resolve the issue.</p>
+            
+            <h3>8.4. International Shipping</h3>
+            <p>For international orders, you are responsible for any customs duties, taxes, or other fees imposed by your country. Delivery times may vary based on customs processing.</p>
+            
+            <h3>8.5. Order Tracking</h3>
+            <p>Once your order ships, we will provide you with a tracking number via email. You can use this tracking number to monitor your package's progress.</p>
+            
+            <h3>8.6. Shipping Address Accuracy</h3>
+            <p>You are responsible for providing a complete and accurate shipping address. We are not responsible for orders shipped to incorrect addresses provided by you.</p>
+            
+            <div class="note-box">
+                <p><strong>Note:</strong> Shipping times are estimates and not guarantees. Actual delivery times may vary due to weather, carrier delays, or other factors beyond our control.</p>
+            </div>
+        </section>
+
+        <section id="returns">
+            <h2>9. Returns and Refunds</h2>
+            <p>We want you to be completely satisfied with your purchase. This section outlines our return and refund policies.</p>
+            
+            <h3>9.1. Return Policy</h3>
+            <p>Most unopened items in new condition and returned within 30 days of delivery will receive a full refund or exchange. Some products have different policies or requirements:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Return Period</th>
+                        <th>Condition</th>
+                        <th>Refund Method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gardening Tools</td>
+                        <td>30 days</td>
+                        <td>Unused, original packaging</td>
+                        <td>Original payment method</td>
+                    </tr>
+                    <tr>
+                        <td>Live Plants</td>
+                        <td>7 days</td>
+                        <td>Alive upon arrival</td>
+                        <td>Replacement or store credit</td>
+                    </tr>
+                    <tr>
+                        <td>Seeds</td>
+                        <td>Current season</td>
+                        <td>Unopened packages</td>
+                        <td>Store credit only</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Products</td>
+                        <td>Non-returnable</td>
+                        <td>N/A</td>
+                        <td>Case-by-case basis</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>9.2. Return Process</h3>
+            <p>To return a product:</p>
+            <ol>
+                <li>Contact our customer service team to initiate the return</li>
+                <li>Receive a Return Merchandise Authorization (RMA) number</li>
+                <li>Package the item securely with the RMA number visible</li>
+                <li>Ship the item to our returns address</li>
+                <li>Wait for processing (typically 5-7 business days after receipt)</li>
+            </ol>
+            
+            <h3>9.3. Refund Processing</h3>
+            <p>Refunds will be processed within 7-10 business days after we receive your return. The refund will be issued to your original payment method. Shipping costs are non-refundable unless the return is due to our error.</p>
+            
+            <h3>9.4. Exchanges</h3>
+            <p>We are happy to exchange items for a different size or color, subject to availability. Please contact customer service to arrange an exchange.</p>
+            
+            <h3>9.5. Damaged or Defective Items</h3>
+            <p>If you receive a damaged or defective item, please contact us within 7 days of delivery. We will arrange for a replacement or refund at no additional cost to you.</p>
+            
+            <h3>9.6. Final Sale Items</h3>
+            <p>Some items are marked as "final sale" and cannot be returned or exchanged. These typically include clearance items, custom orders, and perishable goods.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Customer Satisfaction Guarantee:</strong> We stand behind our products. If you're not satisfied with your purchase for any reason, please contact us, and we'll work with you to find a solution.</p>
+            </div>
+        </section>
+
+        <section id="intellectual-property">
+            <h2>10. Intellectual Property</h2>
+            <p>The Site and its original content, features, and functionality are and will remain the exclusive property of Grand Gardening Pairs and its licensors. The Site is protected by copyright, trademark, and other laws of both the United States and foreign countries.</p>
+            
+            <h3>10.1. Copyright</h3>
+            <p>All content included on the Site, such as text, graphics, logos, images, audio clips, video, data, music, software, and other material (collectively "Content") is owned or licensed property of Grand Gardening Pairs or its suppliers or licensors and is protected by copyright and other intellectual property laws.</p>
+            
+            <h3>10.2. Trademarks</h3>
+            <p>The Grand Gardening Pairs name and logo, and all related names, logos, product and service names, designs, and slogans are trademarks of Grand Gardening Pairs or its affiliates or licensors. You must not use such marks without our prior written permission.</p>
+            
+            <h3>10.3. License Grant</h3>
+            <p>Subject to your compliance with these Terms and Conditions, we grant you a limited, non-exclusive, non-transferable, non-sublicensable license to access and make personal, non-commercial use of the Site and its Content.</p>
+            
+            <h3>10.4. Restrictions</h3>
+            <p>You agree not to, and will not assist, encourage, or enable others to:</p>
+            <ul>
+                <li>Use any robot, spider, site search/retrieval application, or other automated device to retrieve or index any portion of the Site</li>
+                <li>Reverse engineer, decompile, disassemble, or otherwise attempt to discover the source code of the Site</li>
+                <li>Remove any copyright, trademark, or other proprietary rights notices contained on the Site</li>
+                <li>Modify, adapt, sublicense, translate, sell, reverse engineer, or create derivative works based on the Site or any Content</li>
+                <li>Use the Site or Content for any commercial purpose without our express written consent</li>
+            </ul>
+            
+            <h3>10.5. Digital Millennium Copyright Act (DMCA)</h3>
+            <p>We respect the intellectual property rights of others. If you believe that your work has been copied in a way that constitutes copyright infringement, please contact us with the following information:</p>
+            <ul>
+                <li>A physical or electronic signature of the copyright owner or authorized agent</li>
+                <li>Identification of the copyrighted work claimed to have been infringed</li>
+                <li>Identification of the material that is claimed to be infringing</li>
+                <li>Your contact information</li>
+                <li>A statement that you have a good faith belief that use of the material is not authorized</li>
+                <li>A statement that the information in the notification is accurate</li>
+            </ul>
+            
+            <div class="warning-box">
+                <p><strong>Warning:</strong> Unauthorized use of our intellectual property may violate copyright, trademark, and other laws. We will enforce our intellectual property rights to the fullest extent of the law.</p>
+            </div>
+        </section>
+
+        <section id="user-content">
+            <h2>11. User Content</h2>
+            <p>Our Site may allow you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material ("User Content"). You are responsible for the User Content that you post on or through the Site.</p>
+            
+            <h3>11.1. Ownership of User Content</h3>
+            <p>We do not claim any ownership rights in the User Content that you post on or through the Site. After posting your User Content to the Site, you continue to retain all ownership rights in such User Content, and you continue to have the right to use your User Content in any way you choose.</p>
+            
+            <h3>11.2. License to User Content</h3>
+            <p>By posting any User Content on the Site, you hereby grant us a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, prepare derivative works of, display, and perform the User Content in connection with the Site and our business.</p>
+            
+            <h3>11.3. User Content Representations</h3>
+            <p>You represent and warrant that:</p>
+            <ul>
+                <li>You own or have the necessary licenses, rights, consents, and permissions to your User Content</li>
+                <li>Your User Content does not and will not infringe any third party's intellectual property rights</li>
+                <li>Your User Content does not contain any defamatory, libelous, or obscene material</li>
+                <li>Your User Content does not violate any applicable law or regulation</li>
+            </ul>
+            
+            <h3>11.4. Prohibited User Content</h3>
+            <p>You agree not to post User Content that:</p>
+            <ul>
+                <li>Is illegal, threatening, defamatory, abusive, harassing, degrading, intimidating, or fraudulent</li>
+                <li>Infringes any patent, trademark, trade secret, copyright, or other intellectual property right</li>
+                <li>Contains any type of unauthorized or unsolicited advertising</li>
+                <li>Impersonates any person or entity</li>
+                <li>Contains viruses or any other computer code that may damage or interfere with our systems</li>
+            </ul>
+            
+            <h3>11.5. Content Moderation</h3>
+            <p>We have the right, but not the obligation, to monitor and edit all User Content. We may remove or edit any User Content at any time without notice for any reason.</p>
+            
+            <h3>11.6. Content Responsibility</h3>
+            <p>You are solely responsible for your User Content and the consequences of posting it. We do not endorse any User Content or any opinion, recommendation, or advice expressed therein.</p>
+            
+            <div class="note-box">
+                <p><strong>Community Guidelines:</strong> We encourage respectful and constructive discussions in our community. Please be kind to other users and share gardening knowledge and experiences in a positive manner.</p>
+            </div>
+        </section>
+
+        <section id="prohibited">
+            <h2>12. Prohibited Activities</h2>
+            <p>You may not access or use the Site for any purpose other than that for which we make the Site available. The Site may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.</p>
+            
+            <h3>12.1. Prohibited Uses</h3>
+            <p>As a user of the Site, you agree not to:</p>
+            <ul>
+                <li>Systematically retrieve data or other content from the Site to create or compile a collection, compilation, database, or directory</li>
+                <li>Make any unauthorized use of the Site, including collecting usernames and/or email addresses of users</li>
+                <li>Use the Site to advertise or offer to sell goods and services</li>
+                <li>Circumvent, disable, or otherwise interfere with security-related features of the Site</li>
+                <li>Engage in unauthorized framing of or linking to the Site</li>
+                <li>Trick, defraud, or mislead us and other users</li>
+                <li>Make improper use of our support services or submit false reports of abuse or misconduct</li>
+                <li>Engage in any automated use of the system, such as using scripts to send comments or messages</li>
+                <li>Interfere with, disrupt, or create an undue burden on the Site or the networks or services connected to the Site</li>
+                <li>Attempt to impersonate another user or person or use the username of another user</li>
+                <li>Sell or otherwise transfer your profile</li>
+                <li>Use any information obtained from the Site in order to harass, abuse, or harm another person</li>
+                <li>Use the Site as part of any effort to compete with us or otherwise use the Site and/or the Content for any revenue-generating endeavor or commercial enterprise</li>
+                <li>Decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Site</li>
+                <li>Attempt to bypass any measures of the Site designed to prevent or restrict access to the Site, or any portion of the Site</li>
+                <li>Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Site to you</li>
+                <li>Delete the copyright or other proprietary rights notice from any Content</li>
+                <li>Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material that interferes with any party's uninterrupted use and enjoyment of the Site</li>
+                <li>Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader</li>
+                <li>Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Site</li>
+                <li>Use the Site in a manner inconsistent with any applicable laws or regulations</li>
+            </ul>
+            
+            <h3>12.2. Enforcement</h3>
+            <p>We have the right to investigate and prosecute violations of any of the above to the fullest extent of the law. We may involve and cooperate with law enforcement authorities in prosecuting users who violate these Terms and Conditions.</p>
+            
+            <div class="warning-box">
+                <p><strong>Serious Consequences:</strong> Violation of these prohibited activities may result in civil, criminal, and/or administrative penalties, fines, or sanctions against the user and those assisting the user.</p>
+            </div>
+        </section>
+
+        <section id="third-party">
+            <h2>13. Third-Party Links</h2>
+            <p>The Site may contain links to third-party websites or services that are not owned or controlled by Grand Gardening Pairs. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.</p>
+            
+            <h3>13.1. No Endorsement</h3>
+            <p>The inclusion of any link does not imply endorsement by Grand Gardening Pairs of the site. Use of any such linked website is at the user's own risk.</p>
+            
+            <h3>13.2. Third-Party Services</h3>
+            <p>We may use third-party services to help us operate our business and the Site or administer activities on our behalf, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes.</p>
+            
+            <h3>13.3. Third-Party Content</h3>
+            <p>Content from third parties, including other users, advertisers, and other third parties, is made available to you through the Site. We do not control, and are not responsible for, this content.</p>
+            
+            <h3>13.4. Your Interactions with Third Parties</h3>
+            <p>Your interactions with organizations and/or individuals found on or through the Site, including payment and delivery of goods or services, and any other terms, conditions, warranties, or representations associated with such dealings, are solely between you and such organizations and/or individuals.</p>
+            
+            <div class="note-box">
+                <p><strong>Advice:</strong> We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit.</p>
+            </div>
+        </section>
+
+        <section id="termination">
+            <h2>14. Termination</h2>
+            <p>We may terminate or suspend your account and bar access to the Site immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms and Conditions.</p>
+            
+            <h3>14.1. Grounds for Termination</h3>
+            <p>We may terminate or suspend your account for, including but not limited to:</p>
+            <ul>
+                <li>Violation of these Terms and Conditions</li>
+                <li>Fraudulent, abusive, or otherwise illegal activity</li>
+                <li>Requests by law enforcement or other government agencies</li>
+                <li>Discontinuance or material modification to the Site</li>
+                <li>Unexpected technical issues or problems</li>
+                <li>Extended periods of inactivity</li>
+            </ul>
+            
+            <h3>14.2. Effects of Termination</h3>
+            <p>Upon termination, your right to use the Site will immediately cease. If you wish to terminate your account, you may simply discontinue using the Site.</p>
+            
+            <h3>14.3. Survival</h3>
+            <p>All provisions of the Terms and Conditions which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+            
+            <h3>14.4. Appeal Process</h3>
+            <p>If you believe your account was terminated in error, you may contact us to appeal the decision. We will review your appeal and respond within a reasonable time.</p>
+        </section>
+
+        <section id="disclaimer">
+            <h2>15. Disclaimer</h2>
+            <p>YOUR USE OF THE SITE IS AT YOUR SOLE RISK. THE SITE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. GRAND GARDENING PAIRS EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.</p>
+            
+            <h3>15.1. No Warranty</h3>
+            <p>We make no warranty that:</p>
+            <ul>
+                <li>The Site will meet your requirements</li>
+                <li>The Site will be uninterrupted, timely, secure, or error-free</li>
+                <li>The results that may be obtained from the use of the Site will be accurate or reliable</li>
+                <li>The quality of any products, services, information, or other material purchased or obtained by you through the Site will meet your expectations</li>
+                <li>Any errors in the software will be corrected</li>
+            </ul>
+            
+            <h3>15.2. Gardening Advice Disclaimer</h3>
+            <p>Any gardening advice, tips, or information provided on the Site is for general informational purposes only. We are not responsible for:</p>
+            <ul>
+                <li>The success or failure of your gardening projects</li>
+                <li>Plant growth, health, or survival</li>
+                <li>Local climate conditions affecting your garden</li>
+                <li>Pest or disease problems in your garden</li>
+                <li>Any other outcomes related to implementing gardening advice from our Site</li>
+            </ul>
+            
+            <h3>15.3. Product Information</h3>
+            <p>We attempt to be as accurate as possible in our product descriptions. However, we do not warrant that product descriptions or other content on the Site is accurate, complete, reliable, current, or error-free.</p>
+            
+            <h3>15.4. Technical Issues</h3>
+            <p>We do not guarantee that the Site will be secure or free from bugs or viruses. You are responsible for configuring your information technology, computer programs, and platform to access our Site.</p>
+            
+            <div class="warning-box">
+                <p><strong>Important:</strong> Some jurisdictions do not allow the exclusion of certain warranties, so some of the above exclusions may not apply to you.</p>
+            </div>
+        </section>
+
+        <section id="limitation">
+            <h2>16. Limitation of Liability</h2>
+            <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL GRAND GARDENING PAIRS, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES, BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</p>
+            
+            <ul>
+                <li>YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SITE</li>
+                <li>ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SITE</li>
+                <li>ANY CONTENT OBTAINED FROM THE SITE</li>
+                <li>UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT</li>
+            </ul>
+            
+            <h3>16.1. Cap on Liability</h3>
+            <p>UNDER NO CIRCUMSTANCES WILL GRAND GARDENING PAIRS BE LIABLE TO YOU FOR MORE THAN THE GREATER OF (A) THE TOTAL AMOUNT PAID TO US BY YOU DURING THE ONE-MONTH PERIOD PRIOR TO THE ACT, OMISSION, OR OCCURRENCE GIVING RISE TO SUCH LIABILITY OR (B) $100.</p>
+            
+            <h3>16.2. Basis of the Bargain</h3>
+            <p>THE LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN GRAND GARDENING PAIRS AND YOU.</p>
+            
+            <h3>16.3. Applicable Law</h3>
+            <p>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.</p>
+            
+            <div class="note-box">
+                <p><strong>Legal Notice:</strong> This limitation of liability section applies whether the alleged liability is based on contract, tort, negligence, strict liability, or any other basis, even if we have been advised of the possibility of such damage.</p>
+            </div>
+        </section>
+
+        <section id="indemnification">
+            <h2>17. Indemnification</h2>
+            <p>You agree to defend, indemnify, and hold harmless Grand Gardening Pairs, its contractors, and its licensors, and their respective directors, officers, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from:</p>
+            
+            <ul>
+                <li>Your use of and access to the Site</li>
+                <li>Your violation of any term of these Terms and Conditions</li>
+                <li>Your violation of any third-party right, including without limitation any copyright, property, or privacy right</li>
+                <li>Any claim that your User Content caused damage to a third party</li>
+            </ul>
+            
+            <h3>17.1. Defense and Settlement</h3>
+            <p>This defense and indemnification obligation will survive these Terms and Conditions and your use of the Site. We reserve the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will assist and cooperate with us in asserting any available defenses.</p>
+            
+            <h3>17.2. Cooperation</h3>
+            <p>You agree to cooperate with us in the defense of any claim. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you.</p>
+        </section>
+
+        <section id="disputes">
+            <h2>18. Dispute Resolution</h2>
+            <p>Please read this section carefully. It affects your rights and will have a substantial impact on how disputes between you and Grand Gardening Pairs are resolved.</p>
+            
+            <h3>18.1. Informal Resolution</h3>
+            <p>Before filing a claim against Grand Gardening Pairs, you agree to try to resolve the dispute informally by contacting us at legal@grandgardeningpairs.com. We'll try to resolve the dispute informally by contacting you via email. If a dispute is not resolved within 30 days of submission, you or Grand Gardening Pairs may bring a formal proceeding.</p>
+            
+            <h3>18.2. Arbitration Agreement</h3>
+            <p>You and Grand Gardening Pairs agree to resolve any claims relating to these Terms and Conditions or the Site through final and binding arbitration, except as set forth under Exceptions to Agreement to Arbitrate below.</p>
+            
+            <h3>18.3. Arbitration Procedures</h3>
+            <p>The American Arbitration Association (AAA) will administer the arbitration under its Commercial Arbitration Rules. The arbitration will be held in the United States county where you live or work, or any other location we agree to.</p>
+            
+            <h3>18.4. No Class Actions</h3>
+            <p>You may only resolve disputes with us on an individual basis and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.</p>
+            
+            <h3>18.5. Exceptions</h3>
+            <p>Notwithstanding the foregoing, either party may bring a lawsuit solely for injunctive relief to stop unauthorized use or abuse of the Site or intellectual property infringement without first engaging in the informal dispute resolution process described above.</p>
+            
+            <h3>18.6. Judicial Forum for Disputes</h3>
+            <p>In the event that the agreement to arbitrate is found not to apply to you or your claim, you and Grand Gardening Pairs agree that any judicial proceeding will be brought in the federal or state courts of California.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Arbitration Notice:</strong> By agreeing to these Terms and Conditions, you agree to resolve any disputes through binding arbitration rather than in court, and you waive certain rights to participate in class actions.</p>
+            </div>
+        </section>
+
+        <section id="governing-law">
+            <h2>19. Governing Law</h2>
+            <p>These Terms and Conditions and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions.</p>
+            
+            <h3>19.1. Jurisdiction</h3>
+            <p>You agree that any legal action or proceeding between Grand Gardening Pairs and you for any purpose concerning these Terms and Conditions or the parties' obligations hereunder shall be brought exclusively in a federal or state court of competent jurisdiction sitting in California.</p>
+            
+            <h3>19.2. Waiver of Jury Trial</h3>
+            <p>Each party hereby waives any right to jury trial in connection with any action or litigation in any way arising out of or related to these Terms and Conditions.</p>
+            
+            <h3>19.3. International Users</h3>
+            <p>The Site is controlled, operated, and administered by Grand Gardening Pairs from our offices within the USA. If you access the Site from a location outside the USA, you are responsible for compliance with all local laws.</p>
+        </section>
+
+        <section id="miscellaneous">
+            <h2>20. Miscellaneous</h2>
+            <p>This section contains additional important provisions that govern your use of our Site.</p>
+            
+            <h3>20.1. Entire Agreement</h3>
+            <p>These Terms and Conditions constitute the entire agreement between you and Grand Gardening Pairs regarding our Site and supersede and replace any prior agreements we might have had between us regarding the Site.</p>
+            
+            <h3>20.2. Severability</h3>
+            <p>If any provision of these Terms and Conditions is held to be invalid or unenforceable by a court, the remaining provisions of these Terms and Conditions will remain in effect.</p>
+            
+            <h3>20.3. No Waiver</h3>
+            <p>Our failure to enforce any right or provision of these Terms and Conditions will not be considered a waiver of those rights.</p>
+            
+            <h3>20.4. Assignment</h3>
+            <p>You may not assign or transfer these Terms and Conditions, by operation of law or otherwise, without our prior written consent. Any attempt by you to assign or transfer these Terms and Conditions without such consent will be null and void.</p>
+            
+            <h3>20.5. Force Majeure</h3>
+            <p>We shall not be liable for any failure to perform our obligations hereunder where such failure results from any cause beyond our reasonable control, including, without limitation, mechanical, electronic, or communications failure or degradation.</p>
+            
+            <h3>20.6. Notices</h3>
+            <p>We may provide notifications, whether such notifications are required by law or are for marketing or other business related purposes, to you via email notice, written or hard copy notice, or through posting of such notice on our website, as determined by us in our sole discretion.</p>
+            
+            <h3>20.7. Relationship</h3>
+            <p>No joint venture, partnership, employment, or agency relationship exists between you and Grand Gardening Pairs as a result of these Terms and Conditions or use of the Site.</p>
+            
+            <h3>20.8. Headings</h3>
+            <p>The headings in these Terms and Conditions are for convenience only and have no legal or contractual effect.</p>
+        </section>
+
+        <section id="contact">
+            <h2>21. Contact Information</h2>
+            <p>Questions about these Terms and Conditions should be sent to us at:</p>
+            
+            <div class="contact-info">
+                <p><strong>Grand Gardening Pairs</strong></p>
+                <p>123 Green Thumb Lane, Gardenville, CA 90210</p>
+                <p>Email: legal@grandgardeningpairs.com</p>
+                <p>Phone: +1-888-929-2292</p>
+            </div>
+            
+            <h3>21.1. Customer Service</h3>
+            <p>For general inquiries, customer service, or technical support, please contact:</p>
+            <p>Email: support@grandgardeningpairs.com</p>
+            <p>Phone: +1-888-929-2292</p>
+            
+            <h3>21.2. Response Time</h3>
+            <p>We endeavor to respond to all legitimate requests within a reasonable time. For legal notices, we will respond within the time required by applicable law.</p>
+            
+            <h3>21.3. Language</h3>
+            <p>All communications and notices must be in English.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grand Gardening Pairs</h3>
+                    <p>Your trusted partner in creating beautiful and productive gardens. We provide expert advice, quality resources, and inspiration for gardeners of all skill levels.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> 123 Green Thumb Lane, Gardenville, CA 90210</p>
+                    <p><strong>Phone:</strong> +1-888-929-2292</p>
+                    <p><strong>Email:</strong> info@grandgardeningpairs.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#getting-started">Getting Started</a>
+                    <a href="index.html#vegetables">Vegetable Gardening</a>
+                    <a href="index.html#flowers">Flower Gardens</a>
+                    <a href="index.html#tools">Gardening Tools</a>
+                    <a href="index.html#seasonal">Seasonal Guide</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookies Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for seasonal gardening tips, exclusive content, and special offers.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" style="padding: 0.5rem; width: 100%; margin-bottom: 0.5rem; border-radius: 4px; border: none;">
+                        <button type="submit" class="btn" style="width: 100%; background-color: #4caf50; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 4px; cursor: pointer;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Grand Gardening Pairs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
